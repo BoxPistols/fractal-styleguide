@@ -49,6 +49,30 @@ run theme css compile
   sass --watch node_modules/@frctl/mandelbrot/dist/css/.
 ```
 
+### theme css save
+
+$ cd node_modules/@frctl/mandelbrot/dist/css/
+
+$ cp origin.sass ../../../../../src/theme-overrides/
+
+↓
+
+$ cp node_modules/@frctl/mandelbrot/dist/css/origin.sass src/theme-overrides/
+
+↓
+
+$ cp src/theme-overrides/origin.sass node_modules/@frctl/mandelbrot/dist/css/
+
+↓
+
+$ mv src/theme-overrides/origin.css node_modules/@frctl/mandelbrot/dist/css/
+
+↓
+
+$ cp src/theme-overrides/origin.css node_modules/@frctl/mandelbrot/dist/css/
+
+$ sass --watch --no-source-map src/theme-overrides/
+
 ---
 
 ## tree
