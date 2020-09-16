@@ -17,7 +17,7 @@ fractal.web.set('server.sync', true);
 fractal.web.set('server.syncOptions', { open: true});
 
 /* 静的ファイルの書き出し場所 */
-fractal.web.set('builder.dest', __dirname + '/dist');
+fractal.web.set('builder.dest', __dirname + '/docs');
 
 // 静的ファイル読み込み
 fractal.web.set('static.path', __dirname + '/assets');
@@ -37,6 +37,6 @@ const myCustomisedTheme = mandelbrot({
     // panels: ["html", "info", "resources"]
 });
 
-myCustomisedTheme.addLoadPath(__dirname + '/src/theme-overrides');
+// myCustomisedTheme.addLoadPath(__dirname + '/src/theme-overrides');
 
 fractal.web.theme(myCustomisedTheme);
