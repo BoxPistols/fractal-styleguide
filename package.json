@@ -1,0 +1,19 @@
+{
+  "name": "frractal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fr": "fractal start --sync",
+    "sass": "sass --watch assets/css/."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@frctl/fractal": "^1.3.0",
+    "loadash": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10"
+  }
+}
