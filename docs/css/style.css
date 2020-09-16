@@ -1,5 +1,27 @@
+/** reset **/
+*, ::after, ::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .mg-1 {
-  margin: 4px;
+  margin: 12px;
+}
+
+.pd-1 {
+  padding: 12px;
+}
+
+.wrap {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.wrap-def {
+  background-color: white;
+}
+.wrap-dark {
+  background-color: #123;
 }
 
 .header {
@@ -9,5 +31,3 @@
   color: white;
   font-size: 20px;
 }
-
-/*# sourceMappingURL=style.css.map */
