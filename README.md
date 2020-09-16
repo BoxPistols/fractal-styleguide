@@ -78,8 +78,11 @@ $ sass --watch --no-source-map src/theme-overrides/
 ## tree
 
 ```
-frractal
+fractal
+├─ .DS_Store
 ├─ .gitignore
+├─ .vscode
+│  └─ settings.json
 ├─ README.md
 ├─ assets
 │  ├─ css
@@ -88,10 +91,9 @@ frractal
 │  │  ├─ style.css
 │  │  ├─ style.css.map
 │  │  ├─ style.sass
+│  │  ├─ theme
 │  │  └─ utility
 │  │     └─ _base.sass
-
-
 │  └─ js
 │     └─ app.js
 ├─ favicon.ico
@@ -102,8 +104,12 @@ frractal
 │  ├─ components
 │  │  ├─ _preview.hbs
 │  │  └─ header.hbs
-│  └─ docs
-│     └─ index.md
+│  ├─ docs
+│  │  └─ index.md
+│  └─ theme-overrides
+│     ├─ origin.css
+│     └─ origin.sass
+├─ views
 └─ yarn.lock
 
 ```
