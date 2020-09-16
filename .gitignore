@@ -52,6 +52,8 @@ bower.json
 
 # Ignore node_modules
 node_modules/
+# css file
+!node_modules/@frctl/mandelbrot/dist/css/
 
 # Ignore precompiled javascript packs
 /public/packs

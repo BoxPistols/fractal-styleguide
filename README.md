@@ -28,6 +28,28 @@ End with an example of getting some data out of the system or using it for a lit
 
 Add notes about how to use the system.
 
+
+---
+
+## file
+
+### theme styling
+
+compile
+
+`node_modules/@frctl/mandelbrot/dist/css/origin.scss`
+
+load theme
+
+`node_modules/@frctl/mandelbrot/dist/css/origin.css`
+
+run theme css compile
+`sass --watch node_modules/@frctl/mandelbrot/dist/css/.`
+
+---
+
+## tree
+
 ```
 frractal
 ├─ .gitignore
@@ -41,6 +63,8 @@ frractal
 │  │  ├─ style.sass
 │  │  └─ utility
 │  │     └─ _base.sass
+
+
 │  └─ js
 │     └─ app.js
 ├─ favicon.ico
