@@ -30,6 +30,7 @@ const myCustomisedTheme = mandelbrot({
     // any other theme configuration values here
     skin: 'origin',
     highlightStyles: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/monokai.min.css',
+    lang: 'ja'
     // panels: ["html", "info", "resources"]
 });
 
