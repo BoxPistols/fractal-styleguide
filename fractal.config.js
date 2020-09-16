@@ -26,6 +26,9 @@ fractal.web.set('static.path', __dirname + '/assets');
  * Theme
  */
 const mandelbrot = require('@frctl/mandelbrot');
+
+// specify a directory to hold the theme override templates
+
 const myCustomisedTheme = mandelbrot({
     // any other theme configuration values here
     skin: 'origin',
@@ -33,5 +36,7 @@ const myCustomisedTheme = mandelbrot({
     lang: 'ja'
     // panels: ["html", "info", "resources"]
 });
+
+myCustomisedTheme.addLoadPath(__dirname + '/src/theme-overrides');
 
 fractal.web.theme(myCustomisedTheme);

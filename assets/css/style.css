@@ -5,8 +5,9 @@
 .header {
   padding: 12px;
   text-align: center;
-  background: gray;
+  background: green;
   color: white;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

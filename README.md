@@ -44,7 +44,10 @@ load theme
 `node_modules/@frctl/mandelbrot/dist/css/origin.css`
 
 run theme css compile
-`sass --watch node_modules/@frctl/mandelbrot/dist/css/.`
+
+```js
+  sass --watch node_modules/@frctl/mandelbrot/dist/css/.
+```
 
 ---
 
