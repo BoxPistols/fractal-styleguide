@@ -22,6 +22,9 @@ fractal.web.set('builder.dest', __dirname + '/docs');
 // 静的ファイル読み込み
 fractal.web.set('static.path', __dirname + '/assets');
 
+// Staus
+// fractal.components.set('default.status', 'wip'); // default is 'ready'
+
 /*
  * Theme
  */
