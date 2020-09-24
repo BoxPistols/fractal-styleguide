@@ -1,10 +1,13 @@
+@import "block"
+
 /** reset **/
 *, ::after, ::before
   margin: 0
   box-sizing: border-box
 
-
 $white: white
+$main: #53a6c7
+$accent: #cf5da0
 $dark: #123
 .mg
   &-1
@@ -21,3 +24,35 @@ $dark: #123
     background-color: $white
   &-dark
     background-color: $dark
+    color: $white
+
+// section
+.section
+  padding: 20px 24px 0
+
+// color
+.org__color
+    @include fx
+    flex-wrap: wrap
+.mol__color
+  display: flex
+  margin: 8px
+.atm__color
+  width: 84px
+  height: 84px
+  border-radius: 12px
+  color: $white
+  @include fx
+  @include fx-col
+  @include fx-c
+  &.figure
+    text-align: center
+    font-size: 12px
+  &.base
+    background-color: $white
+    .figure
+      color: gray
+  &.main
+    background-color: $main
+  &.accent
+    background-color: $accent

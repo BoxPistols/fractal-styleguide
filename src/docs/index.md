@@ -2,4 +2,4 @@
 title: Documentページ
 ---
 
-this is docですます
+this is doc

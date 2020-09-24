@@ -1,0 +1,16 @@
+@mixin fx
+  display: flex
+
+@mixin fx-col
+  flex-direction: column
+
+@mixin fx-c
+  justify-content: center
+  align-items: center
+
+.fx
+  @include fx
+.fx-col
+  @include fx-col
+.fx-c
+  @include fx-c

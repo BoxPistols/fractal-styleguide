@@ -2030,6 +2030,9 @@ mark {
   padding-right: 1em;
 }
 
+.Prose > * {
+  color: white;
+}
 .Prose pre {
   padding: 0.125rem 0.5rem;
   margin: 1rem -0.5rem;
