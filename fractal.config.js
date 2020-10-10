@@ -42,5 +42,5 @@ const myCustomisedTheme = mandelbrot({
   panels: ['view', 'html', 'context', 'notes', 'info'],
 })
 
-myCustomisedTheme.addLoadPath(__dirname + '/src/theme-overrides')
+// myCustomisedTheme.addLoadPath(__dirname + '/src/theme-overrides')
 fractal.web.theme(myCustomisedTheme)

@@ -1,7 +1,6 @@
 @charset "UTF-8";
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: monospace;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -98,7 +97,7 @@ svg:not(:root) {
 }
 
 code, kbd, pre, samp {
-  font-family: monospace, monospace;
+  font-family: monospace;
   font-size: 1em;
 }
 
@@ -186,54 +185,6 @@ textarea {
   font: inherit;
 }
 
-@font-face {
-  font-family: Hack;
-  src: url(../fonts/hack-regular-webfont.woff2) format("woff2"), url(../fonts/hack-regular-webfont.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: Hack;
-  src: url(../fonts/hack-bold-webfont.woff2) format("woff2"), url(../fonts/hack-bold-webfont.woff) format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: Hack;
-  src: url(../fonts/hack-italic-webfont.woff2) format("woff2"), url(../fonts/hack-italic-webfont.woff) format("woff");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: Hack;
-  src: url(../fonts/hack-bolditalic-webfont.woff2) format("woff2"), url(../fonts/hack-bolditalic-webfont.woff) format("woff");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url(../fonts/OpenSans-Regular.woff2) format("woff2"), url(../fonts/OpenSans-Regular.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url(../fonts/OpenSans-Italic.woff2) format("woff2"), url(../fonts/OpenSans-Italic.woff) format("woff");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url(../fonts/OpenSans-Semibold.woff2) format("woff2"), url(../fonts/OpenSans-Semibold.woff) format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url(../fonts/OpenSans-SemiboldItalic.woff2) format("woff2"), url(../fonts/OpenSans-SemiboldItalic.woff) format("woff");
-  font-weight: 700;
-  font-style: italic;
-}
 *, ::after, ::before {
   box-sizing: inherit;
 }
@@ -307,7 +258,7 @@ a:hover {
 }
 
 code, pre {
-  font-family: Hack, Consolas, Monaco, "Andale Mono", monospace;
+  font-family: "Andale Mono", monospace;
   font-size: 0.875rem;
   line-height: 1.71429;
 }
@@ -1139,7 +1090,7 @@ mark {
   margin-top: 1.5rem;
 }
 .Error-stack pre {
-  font-family: Hack, Consolas, Monaco, "Andale Mono", monospace;
+  font-family: "Andale Mono", monospace;
   font-size: 0.875rem;
   line-height: 1.71429;
   color: rgba(83, 83, 99, 0.75);
@@ -1154,7 +1105,7 @@ mark {
   font-size: 0.75rem;
   line-height: 1.66667;
   letter-spacing: 0.075em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #b00;
 }
 .Error--render .Error-message {
@@ -1200,7 +1151,7 @@ mark {
   font-size: 0.75rem;
   line-height: 1.66667;
   letter-spacing: 0.075em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: block;
   width: auto;
   padding: 0.25rem 0;
@@ -1501,7 +1452,7 @@ mark {
   font-size: 0.75rem;
   line-height: 1.66667;
   letter-spacing: 0.075em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: block;
   padding-right: 0.5rem;
   padding-bottom: 0.25rem;
@@ -2133,7 +2084,7 @@ mark {
   font-size: 0.75rem;
   line-height: 1.66667;
   letter-spacing: 0.075em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   overflow: hidden;
   position: absolute;
   height: 1px;
@@ -2193,7 +2144,7 @@ mark {
   font-size: 0.75rem;
   line-height: 1.66667;
   letter-spacing: 0.075em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: inline-block;
   border-radius: 2rem;
   padding: 0.125rem 0.75rem;
@@ -2242,10 +2193,9 @@ mark {
 }
 
 .Tree-title {
-  font-size: 0.75rem;
+  font-size: 1rem;
   line-height: 1.66667;
-  letter-spacing: 0.075em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   -webkit-box-flex: 1;
   flex: 1 1 auto;
   color: ghostwhite;
@@ -2302,7 +2252,7 @@ mark {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #ff0;
+  color: yellow;
 }
 
 [dir=ltr] .Tree-collectionLabel {
