@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "fr": "fractal start --sync",
-    "sass": "sass --watch --no-source-map assets/css/.  src/theme-overrides/",
+    "sass": "sass --watch --no-source-map assets/css/.  assets/theme/.  src/theme-overrides/",
     "cp": "cp src/theme-overrides/origin.css node_modules/@frctl/mandelbrot/dist/css/"
   },
   "author": "",

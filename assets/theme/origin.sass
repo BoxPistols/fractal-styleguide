@@ -1,9 +1,5 @@
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css
-
 html
-  font-family: monospace
-
-  // font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
   line-height: 1.15
   -ms-text-size-adjust: 100%
   -webkit-text-size-adjust: 100%
@@ -80,7 +76,7 @@ svg:not(:root)
   overflow: hidden
 
 code, kbd, pre, samp
-  font-family: monospace, monospace
+  font-family: monospace
   font-size: 1em
 
 figure
@@ -145,66 +141,18 @@ textarea
   &::-webkit-search-cancel-button, &::-webkit-search-decoration
     -webkit-appearance: none
 
-  \::-webkit-input-placeholder
+  ::-webkit-input-placeholder
     color: inherit
     opacity: 0.54
 
-  \::-webkit-file-upload-button
+  ::-webkit-file-upload-button
     -webkit-appearance: button
     font: inherit
-
-@font-face
-  font-family: Hack
-  src: url(../fonts/hack-regular-webfont.woff2) format("woff2"), url(../fonts/hack-regular-webfont.woff) format("woff")
-  font-weight: 400
-  font-style: normal
-
-@font-face
-  font-family: Hack
-  src: url(../fonts/hack-bold-webfont.woff2) format("woff2"), url(../fonts/hack-bold-webfont.woff) format("woff")
-  font-weight: 700
-  font-style: normal
-
-@font-face
-  font-family: Hack
-  src: url(../fonts/hack-italic-webfont.woff2) format("woff2"), url(../fonts/hack-italic-webfont.woff) format("woff")
-  font-weight: 400
-  font-style: italic
-
-@font-face
-  font-family: Hack
-  src: url(../fonts/hack-bolditalic-webfont.woff2) format("woff2"), url(../fonts/hack-bolditalic-webfont.woff) format("woff")
-  font-weight: 700
-  font-style: italic
-
-@font-face
-  font-family: "Open Sans"
-  src: url(../fonts/OpenSans-Regular.woff2) format("woff2"), url(../fonts/OpenSans-Regular.woff) format("woff")
-  font-weight: 400
-  font-style: normal
-
-@font-face
-  font-family: "Open Sans"
-  src: url(../fonts/OpenSans-Italic.woff2) format("woff2"), url(../fonts/OpenSans-Italic.woff) format("woff")
-  font-weight: 400
-  font-style: italic
-
-@font-face
-  font-family: "Open Sans"
-  src: url(../fonts/OpenSans-Semibold.woff2) format("woff2"), url(../fonts/OpenSans-Semibold.woff) format("woff")
-  font-weight: 700
-  font-style: normal
-
-@font-face
-  font-family: "Open Sans"
-  src: url(../fonts/OpenSans-SemiboldItalic.woff2) format("woff2"), url(../fonts/OpenSans-SemiboldItalic.woff) format("woff")
-  font-weight: 700
-  font-style: italic
 
 *, ::after, ::before
   box-sizing: inherit
 
-\::-moz-selection, ::selection
+::-moz-selection, ::selection
   background-color: rgba(34, 136, 255, 0.2)
 
 html
@@ -265,7 +213,7 @@ a
   outline: 0 !important
 
 code, pre
-  font-family: Hack, Consolas, Monaco, "Andale Mono", monospace
+  font-family: "Andale Mono", monospace
   font-size: 0.875rem
   line-height: 1.71429
 
@@ -274,15 +222,15 @@ svg
   vertical-align: text-bottom
   fill: currentColor
 
-\::-webkit-scrollbar
+::-webkit-scrollbar
   height: 0.125rem
   width: 0.125rem
 
-\::-webkit-scrollbar-button
+::-webkit-scrollbar-button
   height: 0
   width: 0
 
-\::-webkit-scrollbar-thumb
+::-webkit-scrollbar-thumb
   background: rgba(83, 83, 99, 0.1)
   border: 0 none transparent
   border-radius: 0
@@ -293,7 +241,7 @@ svg
   &:active
     background: rgba(83, 83, 99, 0.3)
 
-\::-webkit-scrollbar-track
+::-webkit-scrollbar-track
   background: 0 0
   border: 0 none transparent
   border-radius: 0
@@ -301,7 +249,7 @@ svg
   &:hover, &:active
     background: 0 0
 
-\::-webkit-scrollbar-corner
+::-webkit-scrollbar-corner
   background: 0 0
 
 h1, h2, h3, h4, h5, h6
@@ -1075,7 +1023,7 @@ mark
   margin-top: 1.5rem
 
   pre
-    font-family: Hack, Consolas, Monaco, "Andale Mono", monospace
+    font-family:  "Andale Mono", monospace
     font-size: 0.875rem
     line-height: 1.71429
     color: rgba(83, 83, 99, 0.75)
@@ -1089,7 +1037,7 @@ mark
     font-size: 0.75rem
     line-height: 1.66667
     letter-spacing: 0.075em
-    text-transform: uppercase
+    text-transform: capitalize
     color: #b00
 
   .Error-message
@@ -1131,7 +1079,7 @@ mark
   font-size: 0.75rem
   line-height: 1.66667
   letter-spacing: 0.075em
-  text-transform: uppercase
+  text-transform: capitalize
   display: block
   width: auto
   padding: 0.25rem 0
@@ -1405,7 +1353,7 @@ mark
   font-size: 0.75rem
   line-height: 1.66667
   letter-spacing: 0.075em
-  text-transform: uppercase
+  text-transform: capitalize
   display: block
   padding-right: 0.5rem
   padding-bottom: 0.25rem
@@ -1992,7 +1940,7 @@ mark
   font-size: 0.75rem
   line-height: 1.66667
   letter-spacing: 0.075em
-  text-transform: uppercase
+  text-transform: capitalize
   overflow: hidden
   position: absolute
   height: 1px
@@ -2046,7 +1994,7 @@ mark
   font-size: 0.75rem
   line-height: 1.66667
   letter-spacing: 0.075em
-  text-transform: uppercase
+  text-transform: capitalize
   display: inline-block
   border-radius: 2rem
   padding: 0.125rem 0.75rem
@@ -2087,10 +2035,10 @@ mark
   margin-bottom: 0.5rem
 
 .Tree-title
-  font-size: 0.75rem
+  font-size: 1rem
   line-height: 1.66667
-  letter-spacing: 0.075em
-  text-transform: uppercase
+  // letter-spacing: 0.075em
+  text-transform: capitalize
   -webkit-box-flex: 1
   flex: 1 1 auto
   color: ghostwhite
@@ -2117,10 +2065,18 @@ mark
     display: none
 
 [dir=ltr] .Tree-collection.is-closed .Tree-collectionLabel::before
-  background-image: url(../img/icon-navigation-closed-ltr.svg)
+  // background-image: url(../img/icon-navigation-closed-ltr.svg)
+  content: ">"
+  position: absolute
+  top: 0.25em
+  transform: scale(0.8, 1.2)
 
 [dir=rtl] .Tree-collection.is-closed .Tree-collectionLabel::before
-  background-image: url(../img/icon-navigation-closed-rtl.svg)
+  // background-image: url(../img/icon-navigation-closed-rtl.svg)
+  content: ">"
+  position: absolute
+  top: 0.25em
+  transform: scale(0.8, 1.2)
 
 .Tree-collectionLabel
   font-size: 0.875rem
@@ -2130,12 +2086,13 @@ mark
   width: 100%
   padding-top: 0.375rem
   padding-bottom: 0.375rem
+  margin-left: 0.75rem
   touch-action: manipulation
   -webkit-user-select: none
   -moz-user-select: none
   -ms-user-select: none
   user-select: none
-  color: #ff0
+  color: yellow
 
 [dir=ltr] .Tree-collectionLabel
   text-align: left
@@ -2150,15 +2107,18 @@ mark
   &::before
     display: inline-block
     position: absolute
-    top: 0.75rem
-    width: 0.75rem
-    height: 0.75rem
-    background-image: url(../img/icon-navigation-opened.svg)
-    background-size: 0.5rem
-    background-repeat: no-repeat
-    background-position: 50%
+    // top: 0.75rem
+    // width: 0.75rem
+    // height: 0.75rem
+    // background-image: url(../img/icon-navigation-opened.svg)
+    // background-size: 0.75rem
+    // background-repeat: no-repeat
+    // background-position: 50%
+    color: pink
     opacity: 0.5
-    content: ""
+    content: ">"
+    top: 0.35em
+    transform: scale(0.9, 0.7) rotate(90deg)
 
 .Tree-item
   font-size: 0.875rem
