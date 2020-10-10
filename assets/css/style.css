@@ -17,6 +17,15 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #123;
+}
+
+button {
+  border: none;
+}
+
 .mg-1 {
   margin: 12px;
 }
@@ -94,7 +103,7 @@
 
 .header {
   text-align: center;
-  background: deeppink;
+  background: teal;
   color: white;
   font-size: 24px;
   height: 60px;
@@ -106,4 +115,35 @@
   height: 36px;
   font-size: 18px;
   background: orange;
+}
+
+button.btn {
+  padding: 0;
+  border-radius: 2em;
+}
+button.btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1.5em;
+  min-height: 44px;
+  font-size: 1rem;
+}
+button.btn.success a, button.btn.warning a, button.btn.danger a {
+  color: white;
+}
+button.btn.success {
+  background-color: teal;
+}
+button.btn.warning {
+  background-color: orange;
+}
+button.btn.danger {
+  background-color: tomato;
+}
+button.btn.min {
+  min-width: auto;
+}
+button.btn.normal {
+  min-width: 120px;
 }

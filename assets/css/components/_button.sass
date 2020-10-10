@@ -1,0 +1,22 @@
+button.btn
+  padding: 0
+  border-radius: 2em
+  a
+    @include fx
+    @include fx-c
+    padding: .5em 1.5em
+    min-height: 44px
+    font-size: 1rem
+  &.success, &.warning, &.danger
+    a
+      color: $white,
+  &.success
+    background-color: teal
+  &.warning
+    background-color: orange
+  &.danger
+    background-color: tomato
+  &.min
+    min-width: auto
+  &.normal
+    min-width: 120px
