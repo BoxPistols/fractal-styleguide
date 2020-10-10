@@ -2295,7 +2295,7 @@ mark {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #535363;
+  color: #ff0;
 }
 
 [dir=ltr] .Tree-collectionLabel {
