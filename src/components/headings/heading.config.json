@@ -1,0 +1,17 @@
+{
+  "title": "Heading",
+  "context": {
+    "text": "This is Head!",
+    "className": "header"
+  },
+  "variants": [
+    {
+      "name": "min",
+      "title": "Heading-min",
+      "context": {
+        "text": "min heading",
+        "className": "header min"
+      }
+    }
+  ]
+}

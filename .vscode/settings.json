@@ -1,13 +1,13 @@
 {
   "compile-hero.disable-compile-files-on-did-save-code": true,
   "files.exclude": {
-    "**/.git": true,
+    "**/.git": false,
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "docs": true,
-    "node_modules": true
+    "docs": false,
+    "node_modules": false
   },
   "explorerExclude.backup": null,
   "vue3snippets.enable-compile-vue-file-on-did-save-code": true

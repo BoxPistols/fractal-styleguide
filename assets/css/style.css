@@ -93,9 +93,17 @@
 }
 
 .header {
-  padding: 12px;
   text-align: center;
   background: deeppink;
   color: white;
-  font-size: 20px;
+  font-size: 24px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header.min {
+  height: 36px;
+  font-size: 18px;
+  background: orange;
 }

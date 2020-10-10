@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "fr": "fractal start --sync",
-    "sass": "sass --watch --no-source-map assets/css/.",
-    "tm": "sass --watch --no-source-map src/theme-overrides/",
+    "sass": "sass --watch --no-source-map assets/css/.  src/theme-overrides/",
     "cp": "cp src/theme-overrides/origin.css node_modules/@frctl/mandelbrot/dist/css/"
   },
   "author": "",
@@ -16,6 +15,7 @@
     "@frctl/fractal": "^1.3.0",
     "loadash": "^1.0.0",
     "node-sass": "^4.14.1",
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "tree": "^0.1.3"
   }
 }
