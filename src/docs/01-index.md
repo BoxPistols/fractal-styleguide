@@ -1,8 +1,6 @@
 ---
-title: Documentページ
+title: Fractal
 ---
-
-this is doc
 
 ## Setting
 
