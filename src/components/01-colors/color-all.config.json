@@ -1,0 +1,16 @@
+{
+  "title": "color all",
+  "context": {
+    "className": "base",
+    "sassName": "$white",
+    "color": "white",
+
+    "className-main": "main",
+    "sassName-main": "$main",
+    "color-main": "#53a6c7",
+
+    "className-accent": "accent",
+    "sassName-accent": "$accent",
+    "color-accent": "#cf5da0"
+  }
+}

@@ -39,7 +39,7 @@ const myCustomisedTheme = mandelbrot({
   highlightStyles:
     'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/monokai.min.css',
   lang: 'ja',
-  panels: ['view', 'html', 'context', 'notes', 'info'],
+  panels: ['html', 'view', 'context', 'notes', 'info'],
 })
 
 // myCustomisedTheme.addLoadPath(__dirname + '/src/theme-overrides')

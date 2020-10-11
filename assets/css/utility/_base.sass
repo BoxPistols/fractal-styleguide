@@ -1,23 +1,39 @@
 @import "block"
 
+html
+    font-size: 62.5%
+
+body
+    font-size: 10px
+    line-height: 1.5
+
 /** reset **/
 *, ::after, ::before
   margin: 0
   box-sizing: border-box
 
+/** Colors **/
 $white: white
 $main: #53a6c7
 $accent: #cf5da0
-$dark: #123
-$gray: #ccc
+$dark: #25303b
+$gray: #6e7377
 
+// カスケーディングを使う場合  / 使い方： color: var(--shakespeareColor)
+// :root
+//   --shakespeareColor:  #53a6c7
+//   --hopbushColor: #cf5da0
+
+/** Link **/
 a
   text-decoration: none
   color: $dark
 
+/** Button **/
 button
   border: none
 
+// TODO: Create Utility
 .mg
   &-1
     margin: 12px
@@ -25,10 +41,11 @@ button
   &-1
     padding: 12px
 
+/** Global Wrap **/
 .wrap
   min-height: 100vh
   background-color: $white
-.wrap
+  font-size: 1.6rem
   &-def
     background-color: $white
   &-dark
@@ -49,7 +66,7 @@ button
 .atm__color
   width: 84px
   height: 84px
-  border-radius: 12px
+  border-radius: 50%
   color: $white
   @include fx
   @include fx-col
@@ -57,6 +74,7 @@ button
   &.figure
     text-align: center
     font-size: 12px
+    border: 1px solid #aaa
   &.base
     background-color: $white
     .figure
