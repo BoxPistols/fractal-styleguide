@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "fr": "fractal start --sync",
-    "sass": "sass --watch --no-source-map assets/css/.  assets/theme/. ",
+    "sass": "sass --watch --no-source-map assets/css/.  assets/theme/. src/components/",
     "build": "fractal build"
   },
   "author": "",

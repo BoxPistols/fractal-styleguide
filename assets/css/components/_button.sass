@@ -1,3 +1,14 @@
+/** include **/
+@import "../utility/block"
+
+/** Button default **/
+button
+  border: none
+
+@mixin colorWhite
+  a
+    color: white
+
 button.btn
   padding: 0
   border-radius: 2em
@@ -6,17 +17,20 @@ button.btn
     @include fx-c
     padding: .5em 1.5em
     min-height: 44px
-    font-size: 1rem
-  &.success, &.warning, &.danger
-    a
-      color: $white,
+    font-size: 1.6rem
   &.success
     background-color: teal
+    @include colorWhite
   &.warning
     background-color: orange
+    @include colorWhite
   &.danger
     background-color: tomato
   &.min
     min-width: auto
   &.normal
     min-width: 120px
+  &.middle
+    min-width: 320px
+  &.large
+    min-width: 480px

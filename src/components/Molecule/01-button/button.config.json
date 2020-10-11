@@ -1,5 +1,6 @@
 {
   "title": "button",
+  "name": "button",
   "context": {
     "text": "送信する",
     "className": "btn"
@@ -7,34 +8,30 @@
   "variants": [
     {
       "name": "min",
-      "title": "btn-min",
       "context": {
         "text": "送信",
-        "className": "btn min"
+        "className": "min"
       }
     },
     {
       "name": "normal",
-      "title": "normal",
       "context": {
         "text": "送信する",
-        "className": "btn normal"
+        "className": "normal"
       }
     },
     {
       "name": "success",
-      "title": "success",
       "context": {
         "text": "Success",
-        "className": "btn normal success"
+        "className": "normal success"
       }
     },
     {
       "name": "warning",
-      "title": "warning",
       "context": {
         "text": "warning",
-        "className": "btn normal warning"
+        "className": "normal warning"
       }
     }
   ]

@@ -1,0 +1,51 @@
+{
+  "title": "color",
+  "status": "wip",
+  "context": {
+    "className": "base",
+    "sassName": "$white",
+    "color": "white"
+  },
+  "variants": [
+    {
+      "name": "main",
+      "context": {
+        "className": "main",
+        "sassName": "$main",
+        "color": "#53a6c7"
+      }
+    },
+    {
+      "name": "accent",
+      "context": {
+        "className": "accent",
+        "sassName": "$accent",
+        "color": "#cf5da0"
+      }
+    },
+    {
+      "name": "gray",
+      "context": {
+        "className": "gray",
+        "sassName": "$gray",
+        "color": "#6e7377"
+      }
+    },
+    {
+      "name": "grayDark",
+      "context": {
+        "className": "grayDark",
+        "sassName": "$grayDark",
+        "color": "#44484b"
+      }
+    },
+    {
+      "name": "grayLight",
+      "context": {
+        "className": "grayLight",
+        "sassName": "$grayLight",
+        "color": "#c6cbce"
+      }
+    }
+  ]
+}

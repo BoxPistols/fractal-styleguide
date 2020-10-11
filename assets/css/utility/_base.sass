@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap')
+
+/** include **/
+@import "../components/color"
 @import "block"
+
+/** reset **/
+*, ::after, ::before
+  margin: 0
+  box-sizing: border-box
 
 html
     font-size: 62.5%
@@ -6,32 +15,15 @@ html
 body
     font-size: 10px
     line-height: 1.5
-
-/** reset **/
-*, ::after, ::before
-  margin: 0
-  box-sizing: border-box
-
-/** Colors **/
-$white: white
-$main: #53a6c7
-$accent: #cf5da0
-$dark: #25303b
-$gray: #6e7377
-
-// カスケーディングを使う場合  / 使い方： color: var(--shakespeareColor)
-// :root
-//   --shakespeareColor:  #53a6c7
-//   --hopbushColor: #cf5da0
+    font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
 
 /** Link **/
 a
   text-decoration: none
-  color: $dark
+  color: $black
 
-/** Button **/
-button
-  border: none
 
 // TODO: Create Utility
 .mg
@@ -49,37 +41,9 @@ button
   &-def
     background-color: $white
   &-dark
-    background-color: $dark
+    background-color: $black
     color: $white
 
 // section
 .section
   padding: 20px 24px 0
-
-// color
-.org__color
-    @include fx
-    flex-wrap: wrap
-.mol__color
-  display: flex
-  margin: 8px
-.atm__color
-  width: 84px
-  height: 84px
-  border-radius: 50%
-  color: $white
-  @include fx
-  @include fx-col
-  @include fx-c
-  &.figure
-    text-align: center
-    font-size: 12px
-    border: 1px solid #aaa
-  &.base
-    background-color: $white
-    .figure
-      color: gray
-  &.main
-    background-color: $main
-  &.accent
-    background-color: $accent
