@@ -1,4 +1,17 @@
 @charset "UTF-8";
+.fx {
+  display: flex;
+}
+
+.fx-col {
+  flex-direction: column;
+}
+
+.fx-c {
+  justify-content: center;
+  align-items: center;
+}
+
 html {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   line-height: 1.15;
@@ -1171,14 +1184,16 @@ mark {
   font-size: 0.875rem;
   line-height: 1.71429;
   min-width: 15em;
+  color: gray !important;
 }
 .select2-results__option[aria-selected=true] {
   background-color: rgba(83, 83, 99, 0.1) !important;
+  color: #111 !important;
 }
 
 .select2-results__option--highlighted[aria-selected] {
+  color: white !important;
   background-color: #111 !important;
-  color: #fff !important;
 }
 
 .FileBrowser-item {
@@ -1645,11 +1660,16 @@ mark {
   white-space: nowrap;
 }
 
+.Pen-previewLink {
+  display: flex;
+  padding: 0 0 0 1rem;
+}
 .Pen-previewLink:active, .Pen-previewLink:hover, .Pen-previewLink:link, .Pen-previewLink:visited {
-  color: deeppink;
+  color: yellow;
   text-decoration: none;
 }
 .Pen-previewLink svg {
+  margin: 0 0 0 0.5rem;
   fill: lime;
   opacity: 0.75;
 }

@@ -1,3 +1,5 @@
+@import ../../assets/css/utility/block
+
 html
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
   line-height: 1.15
@@ -1096,13 +1098,15 @@ mark
   font-size: 0.875rem
   line-height: 1.71429
   min-width: 15em
+  color: gray !important
 
   &[aria-selected=true]
     background-color: rgba(83, 83, 99, 0.1) !important
+    color: #111 !important
 
 .select2-results__option--highlighted[aria-selected]
+  color: white !important
   background-color: #111 !important
-  color: #fff !important
 
 .FileBrowser-item
   display: none
@@ -1527,11 +1531,14 @@ mark
   white-space: nowrap
 
 .Pen-previewLink
+  +fx
+  padding: 0 0 0 1rem
   &:active, &:hover, &:link, &:visited
-    color: deeppink
+    color: yellow
     text-decoration: none
 
   svg
+    margin: 0 0 0 .5rem
     fill: lime
     opacity: 0.75
 

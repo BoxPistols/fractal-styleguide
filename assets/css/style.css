@@ -115,20 +115,23 @@ button {
   align-items: center;
 }
 
-.header {
-  text-align: center;
-  background: teal;
-  color: white;
-  font-size: 24px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.head {
+  line-height: 1.8;
 }
-.header.min {
-  height: 36px;
-  font-size: 18px;
-  background: orange;
+.head_1 {
+  font-size: 3.2rem;
+}
+.head_2 {
+  font-size: 2.8rem;
+}
+.head_3 {
+  font-size: 2.4rem;
+}
+.head_4 {
+  font-size: 2.2rem;
+}
+.head_5 {
+  font-size: 2rem;
 }
 
 button.btn {

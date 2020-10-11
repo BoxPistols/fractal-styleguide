@@ -1,0 +1,40 @@
+{
+  "title": "typography",
+  "context": {
+    "text": "春風や惟然いねんが耳に馬の鈴",
+    "dummyText": "ゴーシュは町の活動写真館でセロを弾く係りでした。けれどもあんまり上手でないという評判でした。上手でないどころではなく実は仲間の楽手のなかではいちばん下手でしたから、いつでも楽長にいじめられるのでした。"
+  },
+  "variants":
+  [
+    {
+      "name": "head_1",
+      "context": {
+        "className": "1"
+      }
+    },
+    {
+      "name": "head_2",
+      "context": {
+        "className": "2"
+      }
+    },
+    {
+      "name": "head_3",
+      "context": {
+        "className": "3"
+      }
+    },
+    {
+      "name": "head_4",
+      "context": {
+        "className": "4"
+      }
+    },
+    {
+      "name": "head_5",
+      "context": {
+        "className": "5"
+      }
+    }
+  ]
+}
