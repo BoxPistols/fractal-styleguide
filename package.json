@@ -6,8 +6,8 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "fr": "fractal start --sync",
-    "sass": "sass --watch --no-source-map assets/css/. assets/theme/. src/components/",
+    "start": "fractal start --sync",
+    "css": "sass --watch --no-source-map assets/css/. assets/theme/. src/components/",
     "build": "fractal build"
   },
   "dependencies": {

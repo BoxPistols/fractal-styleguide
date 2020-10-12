@@ -1,45 +1,4 @@
-# fractal
-
-## About
-
-This is Design System
-
-## start
-
-```
-yarn run start
-```
-
-## sass compile
-
-```
-yarn run sass
-```
-
-- sass to css
-    - assets css
-      - Main UI Modules
-    - assets theme
-      - fractal preview design
-    - src
-      - UI components create
-
-
-## build
-
-```
-yarn run build
-```
-
-- compile to docs
-- static files
-
-
----
-
-## tree
-
-2020/10/12 17:01:19
+## 構造
 
 ```json
 .

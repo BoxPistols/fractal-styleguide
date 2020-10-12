@@ -321,8 +321,8 @@ svg {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #444;
-  font-weight: 700;
+  color: white;
+  font-weight: 500;
 }
 
 h1 {
@@ -1955,7 +1955,7 @@ mark {
   line-height: 1.14286;
   font-weight: 700;
   margin-bottom: 1em;
-  color: #444;
+  color: white;
 }
 .Prose h2:not(hr) + h2 {
   margin-top: 2em;
