@@ -1,5 +1,7 @@
 @import ../../assets/css/utility/block
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap')
+
+
 html
   line-height: 1.15
   -ms-text-size-adjust: 100%
@@ -211,7 +213,8 @@ a
     color: lime
 
   &:hover
-    color: deeppink
+    color: white
+    text-shadow: 1px 1px 0 deeppink
 
 [tabindex="-1"]:focus
   outline: 0 !important
@@ -2026,6 +2029,15 @@ mark
 [dir=rtl] .Status--labelled .Status-label
   margin-left: 0.75rem
 
+/** Tree UI **/
+@mixin treeAction
+  border: 1px solid transparent
+  border-radius: 24px
+  transition: .3s
+  &:hover
+    background-color: #c5a8beb2
+    border: 1px solid pink
+
 .Tree
   white-space: nowrap
 
@@ -2039,11 +2051,10 @@ mark
   margin-bottom: 0.5rem
 
 .Tree-title
-  font-size: 1rem
-  line-height: 1.66667
-  // letter-spacing: 0.075em
+  font-size: 1.1rem
+  line-height: 1.5
+  letter-spacing: 0.05em
   text-transform: capitalize
-  -webkit-box-flex: 1
   flex: 1 1 auto
   color: ghostwhite
 
@@ -2053,7 +2064,8 @@ mark
   line-height: 0
   padding: 0
   color: rgba(83, 83, 99, 0.75)
-  opacity: 0.75
+  opacity: 0.85
+  transition: .3s
 
   &:focus, &:hover
     opacity: 1
@@ -2087,7 +2099,7 @@ mark
   line-height: 1.71429
   display: block
   position: relative
-  width: 100%
+  width: 88%
   padding-top: 0.375rem
   padding-bottom: 0.375rem
   margin-left: 0.75rem
@@ -2105,8 +2117,12 @@ mark
   text-align: right
 
 .Tree-collectionLabel
-  &:hover
-    background-color: rgba(83, 83, 99, 0.05)
+  @include treeAction
+  // &:hover
+  //   background-color: rgba(83, 83, 99, 0.05)
+
+  &:focus
+    outline: none
 
   &::before
     display: inline-block
@@ -2217,6 +2233,8 @@ mark
 .Tree-depth-3 .Tree-collectionLabel
   -webkit-padding-start: 2rem
   padding-inline-start: 2rem
+  &:hover
+    background-color: #292d3183
 
 [dir=ltr] .Tree-depth-3 .Tree-collectionLabel
   padding-left: 2rem
@@ -2236,6 +2254,13 @@ mark
 .Tree-depth-3 .Tree-entityLink
   -webkit-padding-start: 3rem
   padding-inline-start: 3rem
+
+  border: 1px solid transparent
+  border-radius: 24px
+  transition: .3s
+  &:hover
+    background-color: #867a8365
+    border: 1px solid pink
 
 [dir=ltr] .Tree-depth-3 .Tree-entityLink
   padding-left: 3rem

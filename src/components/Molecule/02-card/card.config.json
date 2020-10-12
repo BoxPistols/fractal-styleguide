@@ -1,38 +1,33 @@
 {
-  "title": "card",
-  "name": "card",
   "context": {
-    "text": "送信する",
-    "className": "btn"
+    "className": "btn",
+    "text": "送信する"
   },
-  "variants": [
-    {
-      "name": "min",
-      "context": {
-        "text": "送信",
-        "className": "min"
-      }
+  "name": "card",
+  "title": "card",
+  "variants": [{
+    "context": {
+      "className": "min",
+      "text": "送信"
     },
-    {
-      "name": "normal",
-      "context": {
-        "text": "送信する",
-        "className": "normal"
-      }
+    "name": "min"
+  }, {
+    "context": {
+      "className": "normal",
+      "text": "送信する"
     },
-    {
-      "name": "success",
-      "context": {
-        "text": "Success",
-        "className": "normal success"
-      }
+    "name": "normal"
+  }, {
+    "context": {
+      "className": "normal success",
+      "text": "Success"
     },
-    {
-      "name": "warning",
-      "context": {
-        "text": "warning",
-        "className": "normal warning"
-      }
-    }
-  ]
+    "name": "success"
+  }, {
+    "context": {
+      "className": "normal warning",
+      "text": "warning"
+    },
+    "name": "warning"
+  }]
 }

@@ -266,7 +266,8 @@ a:active {
   color: lime;
 }
 a:hover {
-  color: deeppink;
+  color: white;
+  text-shadow: 1px 1px 0 deeppink;
 }
 
 [tabindex="-1"]:focus {
@@ -2200,6 +2201,7 @@ mark {
   margin-left: 0.75rem;
 }
 
+/** Tree UI **/
 .Tree {
   white-space: nowrap;
 }
@@ -2215,10 +2217,10 @@ mark {
 }
 
 .Tree-title {
-  font-size: 1rem;
-  line-height: 1.66667;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
   text-transform: capitalize;
-  -webkit-box-flex: 1;
   flex: 1 1 auto;
   color: ghostwhite;
 }
@@ -2229,7 +2231,8 @@ mark {
   line-height: 0;
   padding: 0;
   color: rgba(83, 83, 99, 0.75);
-  opacity: 0.75;
+  opacity: 0.85;
+  transition: 0.3s;
 }
 .Tree-collapse:focus, .Tree-collapse:hover {
   opacity: 1;
@@ -2265,7 +2268,7 @@ mark {
   line-height: 1.71429;
   display: block;
   position: relative;
-  width: 100%;
+  width: 88%;
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   margin-left: 0.75rem;
@@ -2285,8 +2288,17 @@ mark {
   text-align: right;
 }
 
+.Tree-collectionLabel {
+  border: 1px solid transparent;
+  border-radius: 24px;
+  transition: 0.3s;
+}
 .Tree-collectionLabel:hover {
-  background-color: rgba(83, 83, 99, 0.05);
+  background-color: #c5a8beb2;
+  border: 1px solid pink;
+}
+.Tree-collectionLabel:focus {
+  outline: none;
 }
 .Tree-collectionLabel::before {
   display: inline-block;
@@ -2419,6 +2431,9 @@ mark {
   -webkit-padding-start: 2rem;
   padding-inline-start: 2rem;
 }
+.Tree-depth-3 .Tree-collectionLabel:hover {
+  background-color: #292d3183;
+}
 
 [dir=ltr] .Tree-depth-3 .Tree-collectionLabel {
   padding-left: 2rem;
@@ -2443,6 +2458,13 @@ mark {
 .Tree-depth-3 .Tree-entityLink {
   -webkit-padding-start: 3rem;
   padding-inline-start: 3rem;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  transition: 0.3s;
+}
+.Tree-depth-3 .Tree-entityLink:hover {
+  background-color: #867a8365;
+  border: 1px solid pink;
 }
 
 [dir=ltr] .Tree-depth-3 .Tree-entityLink {

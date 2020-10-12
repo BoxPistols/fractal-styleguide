@@ -4,7 +4,13 @@
 
 This is Design System
 
-## start
+## first setting (once)
+
+```
+yarn run install
+```
+
+## start move
 
 ```
 yarn run start
