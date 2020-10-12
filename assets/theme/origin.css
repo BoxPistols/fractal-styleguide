@@ -30,6 +30,9 @@ body {
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
   display: block;
 }
+article::before, aside::before, details::before, figcaption::before, figure::before, footer::before, header::before, main::before, menu::before, nav::before, section::before, summary::before {
+  color: pink;
+}
 
 audio, canvas, progress, video {
   display: inline-block;
