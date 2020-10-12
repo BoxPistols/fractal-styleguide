@@ -1,6 +1,8 @@
 ## 構造
 
-```json
+<!-- TODO: 別途WikiTool docsifyなど -->
+
+```js
 .
 |-- README.md
 |-- assets // 汎用コンポーネント

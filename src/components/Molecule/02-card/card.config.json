@@ -1,0 +1,38 @@
+{
+  "title": "card",
+  "name": "card",
+  "context": {
+    "text": "送信する",
+    "className": "btn"
+  },
+  "variants": [
+    {
+      "name": "min",
+      "context": {
+        "text": "送信",
+        "className": "min"
+      }
+    },
+    {
+      "name": "normal",
+      "context": {
+        "text": "送信する",
+        "className": "normal"
+      }
+    },
+    {
+      "name": "success",
+      "context": {
+        "text": "Success",
+        "className": "normal success"
+      }
+    },
+    {
+      "name": "warning",
+      "context": {
+        "text": "warning",
+        "className": "normal warning"
+      }
+    }
+  ]
+}

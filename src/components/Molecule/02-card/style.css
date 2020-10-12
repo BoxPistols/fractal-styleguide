@@ -1,0 +1,58 @@
+/** include **/
+.fx {
+  display: flex;
+}
+
+.fx-col {
+  flex-direction: column;
+}
+
+.fx-c {
+  justify-content: center;
+  align-items: center;
+}
+
+/** Button default **/
+button {
+  border: none;
+}
+
+button.btn {
+  padding: 0;
+  border-radius: 2em;
+}
+button.btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1.5em;
+  min-height: 44px;
+  font-size: 1.6rem;
+}
+button.btn.success {
+  background-color: teal;
+}
+button.btn.success a {
+  color: white;
+}
+button.btn.warning {
+  background-color: orange;
+}
+button.btn.warning a {
+  color: white;
+}
+button.btn.danger {
+  background-color: tomato;
+}
+button.btn.min {
+  min-width: auto;
+}
+button.btn.normal {
+  min-width: 120px;
+}
+button.btn.middle {
+  min-width: 320px;
+}
+button.btn.large {
+  min-width: 480px;
+}

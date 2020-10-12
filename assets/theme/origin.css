@@ -133,7 +133,7 @@ button, input, optgroup, select, textarea {
 }
 
 optgroup {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 button, input {
@@ -266,7 +266,7 @@ a:active {
   color: lime;
 }
 a:hover {
-  color: #0062d5;
+  color: deeppink;
 }
 
 [tabindex="-1"]:focus {
@@ -328,26 +328,26 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 1.75rem;
   line-height: 1.14286;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: -0.025em;
 }
 
 h2 {
   font-size: 1.3125rem;
   line-height: 1.14286;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 1.125rem;
   line-height: 1.33333;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h4, h5, h6 {
   font-size: 1rem;
   line-height: 1.5;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 mark {
@@ -572,7 +572,7 @@ mark {
 .select2-container--default .select2-selection--single .select2-selection__clear {
   cursor: pointer;
   float: right;
-  font-weight: 700;
+  font-weight: 500;
 }
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
   color: #999;
@@ -638,7 +638,7 @@ mark {
 .select2-container--default .select2-selection--multiple .select2-selection__clear {
   cursor: pointer;
   float: right;
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 5px;
   margin-right: 10px;
 }
@@ -656,7 +656,7 @@ mark {
   color: #999;
   cursor: pointer;
   display: inline-block;
-  font-weight: 700;
+  font-weight: 500;
   margin-right: 2px;
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
@@ -770,7 +770,7 @@ mark {
 .select2-container--classic .select2-selection--single .select2-selection__clear {
   cursor: pointer;
   float: right;
-  font-weight: 700;
+  font-weight: 500;
   margin-right: 10px;
 }
 .select2-container--classic .select2-selection--single .select2-selection__placeholder {
@@ -874,7 +874,7 @@ mark {
   color: #888;
   cursor: pointer;
   display: inline-block;
-  font-weight: 700;
+  font-weight: 500;
   margin-right: 2px;
 }
 .select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover {
@@ -1097,7 +1097,7 @@ mark {
 .Document-title {
   font-size: 1.75rem;
   line-height: 1.14286;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: -0.025em;
   color: ghostwhite;
 }
@@ -1171,7 +1171,7 @@ mark {
   display: block;
   width: auto;
   padding: 0.25rem 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .select2-selection.select2-selection--single {
@@ -1388,7 +1388,7 @@ mark {
   align-items: center;
   position: relative;
   z-index: 10;
-  background: linear-gradient(-145deg, green, #1b5410);
+  background: linear-gradient(145deg, green, #1b5410);
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.25), 0 2px 0 rgba(0, 0, 0, 0.1);
   text-overflow: ellipsis;
   color: #fff;
@@ -1909,9 +1909,9 @@ mark {
   }
 }
 .Prose {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
-  max-width: 44em;
+  max-width: 70vw;
   width: 100%;
   hanging-punctuation: first;
 }
@@ -1946,14 +1946,14 @@ mark {
 .Prose h1 {
   font-size: 1.75rem;
   line-height: 1.14286;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: -0.025em;
   font-feature-settings: "dlig" 1;
 }
 .Prose h2 {
   font-size: 1.3125rem;
   line-height: 1.14286;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 1em;
   color: white;
 }
@@ -1963,7 +1963,7 @@ mark {
 .Prose h3 {
   font-size: 1.125rem;
   line-height: 1.33333;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 0.75em;
   opacity: 0.8;
 }
@@ -2137,15 +2137,14 @@ mark {
 }
 
 .Status, .Status-dots {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
+  opacity: 0.9;
 }
 
 .Status-dot {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.2rem;
+  height: 0.2rem;
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 100%;
@@ -2181,11 +2180,11 @@ mark {
 }
 
 [dir=ltr] .Status-label + .Status-label {
-  margin-left: 0.25rem;
+  margin-left: 0.5rem;
 }
 
 [dir=rtl] .Status-label + .Status-label {
-  margin-right: 0.25rem;
+  margin-right: 0.5rem;
 }
 
 .Status--labelled .Status-label {
@@ -2248,17 +2247,17 @@ mark {
 }
 
 [dir=ltr] .Tree-collection.is-closed .Tree-collectionLabel::before {
-  content: ">";
+  background-image: url(img/icon-navigation-closed-ltr.svg);
+  content: "";
   position: absolute;
-  top: 0.25em;
-  transform: scale(0.8, 1.2);
+  top: 0.85em;
 }
 
 [dir=rtl] .Tree-collection.is-closed .Tree-collectionLabel::before {
-  content: ">";
+  background-image: url(img/icon-navigation-closed-rtl.svg);
+  content: "";
   position: absolute;
-  top: 0.25em;
-  transform: scale(0.8, 1.2);
+  top: 0.85em;
 }
 
 .Tree-collectionLabel {
@@ -2292,11 +2291,15 @@ mark {
 .Tree-collectionLabel::before {
   display: inline-block;
   position: absolute;
-  color: pink;
-  opacity: 0.5;
-  content: ">";
-  top: 0.35em;
-  transform: scale(0.9, 0.7) rotate(90deg);
+  content: "";
+  top: 0.8rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-image: url(img/icon-navigation-opened.svg);
+  background-size: 0.65rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  opacity: 0.75;
 }
 
 .Tree-item {
@@ -2327,11 +2330,13 @@ mark {
 }
 
 [dir=ltr] .Tree-entityLink .Status {
-  margin-left: 0.25rem;
+  margin-left: 0.5rem;
+  margin-top: -0.25rem;
 }
 
 [dir=rtl] .Tree-entityLink .Status {
-  margin-right: 0.25rem;
+  margin-right: 0.5rem;
+  margin-top: -0.25rem;
 }
 
 .Tree-depth-1 .Tree-collectionLabel {
@@ -2645,4 +2650,18 @@ mark {
   padding-top: 0.375rem;
   opacity: 0.9;
   color: gray;
+}
+
+/** markdown **/
+.hljs {
+  padding: 0.5em 1.5rem !important;
+  color: #79e949 !important;
+  border: 1px solid pink;
+  border-radius: 16px;
+  font-size: 1.2em;
+}
+
+.hljs-comment, .hljs-quote, .hljs-deletion, .hljs-meta {
+  color: #c79ac1 !important;
+  font-size: 0.9em !important;
 }
