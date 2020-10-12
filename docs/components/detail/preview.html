@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" dir="ltr" class="no-js">
+<html lang="en" dir="ltr" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -114,14 +114,14 @@
     <ul class="Browser-tabs">
         
         
-        <li class="Browser-tab Browser-tab--view is-active " data-role="tab">
-            <a href="#browser-c9d17694984f26226c47f119c65d1ec2-panel-view">View</a>
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-c9d17694984f26226c47f119c65d1ec2-panel-html">HTML</a>
         </li>
         
         
         
-        <li class="Browser-tab Browser-tab--html" data-role="tab">
-            <a href="#browser-c9d17694984f26226c47f119c65d1ec2-panel-html">HTML</a>
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-c9d17694984f26226c47f119c65d1ec2-panel-view">View</a>
         </li>
         
         
@@ -132,9 +132,9 @@
         
         
         
-        <li class="Browser-tab Browser-tab--notes" data-role="tab">
-            <a href="#browser-c9d17694984f26226c47f119c65d1ec2-panel-notes">Notes</a>
-        </li>
+        
+        
+        
         
         
         
@@ -143,31 +143,15 @@
         </li>
         
         
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-c9d17694984f26226c47f119c65d1ec2-panel-notes">Notes</a>
+        </li>
+        
+        
     </ul>
 </div>
 
-
-    
-    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-c9d17694984f26226c47f119c65d1ec2-panel-view">
-    <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"ja"</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"Content-Type"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"text/html; charset=utf-8"</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"all"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path '/css/style.css' }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path '/js/app.js' }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Preview Layout<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    </span><span class="hljs-template-variable">{{{ <span class="hljs-builtin-name">yield</span> }}}</span><span class="xml">
-  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></pre>
-    </code>
-</div>
 
     
     
@@ -195,6 +179,28 @@
 </div>
 
     
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-c9d17694984f26226c47f119c65d1ec2-panel-view">
+    <code class="Code Code--lang-handlebars hljs">
+        <pre><span class="xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"ja"</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"Content-Type"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"text/html; charset=utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"all"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path '/css/style.css' }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path '/js/app.js' }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Preview Layout<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    </span><span class="hljs-template-variable">{{{ <span class="hljs-builtin-name">yield</span> }}}</span><span class="xml">
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></pre>
+    </code>
+</div>
+
+    
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-c9d17694984f26226c47f119c65d1ec2-panel-context">
     <code class="Code Code--lang-json hljs">
         
@@ -206,13 +212,10 @@
 </div>
 
     
-    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-c9d17694984f26226c47f119c65d1ec2-panel-notes">
-    <div class="Prose Prose--condensed">
-        
-        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
-        
-    </div>
-</div>
+    
+
+
+
 
     
     <div class="Browser-panel" data-role="tab-panel" id="browser-c9d17694984f26226c47f119c65d1ec2-panel-info">
@@ -250,6 +253,15 @@
         
         
     </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-c9d17694984f26226c47f119c65d1ec2-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        
+    </div>
 </div>
 
     
@@ -297,6 +309,16 @@
         </li>
         
     
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/file.html" data-pjax>
+                <span>File</span>
+                
+            </a>
+        </li>
+        
+    
 
     </ul>
 </div>
@@ -336,11 +358,22 @@
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-colors">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-colors-items">
-                Colors
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-atomic">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-atomic-items">
+                Atomic
             </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-colors-items">
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-atomic-items">
+            
+            
+            
+            
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-typography">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-typography-items">
+                Typography
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-typography-items">
             
             
             
@@ -349,8 +382,128 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="color.html" data-pjax>
-                <span>Color</span>
+            <a class="Tree-entityLink" href="typography--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="typography--head_1.html" data-pjax>
+                <span>Head 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="typography--head_2.html" data-pjax>
+                <span>Head 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="typography--head_3.html" data-pjax>
+                <span>Head 3</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="typography--head_4.html" data-pjax>
+                <span>Head 4</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="typography--head_5.html" data-pjax>
+                <span>Head 5</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -376,10 +529,21 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-color">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-color-items">
+                Color
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-color-items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="title.html" data-pjax>
-                <span>Title</span>
+            <a class="Tree-entityLink" href="color--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -387,7 +551,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -400,22 +564,152 @@
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-headings">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-headings-items">
-                Headings
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="color--main.html" data-pjax>
+                <span>Main</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="color--accent.html" data-pjax>
+                <span>Accent</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="color--gray.html" data-pjax>
+                <span>Gray</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="color--graydark.html" data-pjax>
+                <span>Graydark</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="color--graylight.html" data-pjax>
+                <span>Graylight</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-molecule">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-molecule-items">
+                Molecule
             </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-headings-items">
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-molecule-items">
             
             
             
             
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-heading">
-            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-heading-items">
-                Heading
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-button">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-button-items">
+                Button
             </button>
-            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-heading-items">
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-button-items">
             
             
             
@@ -424,7 +718,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="heading--default.html" data-pjax>
+            <a class="Tree-entityLink" href="button--default.html" data-pjax>
                 <span>Default</span>
                 
 
@@ -448,8 +742,80 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="heading--min.html" data-pjax>
+            <a class="Tree-entityLink" href="button--min.html" data-pjax>
                 <span>Min</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--normal.html" data-pjax>
+                <span>Normal</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--success.html" data-pjax>
+                <span>Success</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--warning.html" data-pjax>
+                <span>Warning</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -496,8 +862,8 @@
         </div>
         <div class="Tree-aside">
             Built on:
-            <time datetime="2020-10-10T20:59:20.296Z">
-                2020-10-11
+            <time datetime="2020-10-12T07:03:40.456Z">
+                10/12/2020
             </time>
         </div>
     </div>

@@ -1,6 +1,19 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap");
+.fx {
+  display: flex;
+}
+
+.fx-col {
+  flex-direction: column;
+}
+
+.fx-c {
+  justify-content: center;
+  align-items: center;
+}
+
 html {
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -9,6 +22,9 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
@@ -1171,14 +1187,16 @@ mark {
   font-size: 0.875rem;
   line-height: 1.71429;
   min-width: 15em;
+  color: gray !important;
 }
 .select2-results__option[aria-selected=true] {
   background-color: rgba(83, 83, 99, 0.1) !important;
+  color: #111 !important;
 }
 
 .select2-results__option--highlighted[aria-selected] {
+  color: white !important;
   background-color: #111 !important;
-  color: #fff !important;
 }
 
 .FileBrowser-item {
@@ -1316,7 +1334,7 @@ mark {
   overflow: auto;
 }
 .Frame-panel--main.is-loading {
-  background-image: url(../img/loader.svg);
+  background-image: url(img/loader.svg);
   background-repeat: no-repeat;
   background-position: 50%;
 }
@@ -1645,11 +1663,16 @@ mark {
   white-space: nowrap;
 }
 
+.Pen-previewLink {
+  display: flex;
+  padding: 0 0 0 1rem;
+}
 .Pen-previewLink:active, .Pen-previewLink:hover, .Pen-previewLink:link, .Pen-previewLink:visited {
-  color: deeppink;
+  color: yellow;
   text-decoration: none;
 }
 .Pen-previewLink svg {
+  margin: 0 0 0 0.5rem;
   fill: lime;
   opacity: 0.75;
 }
@@ -1681,7 +1704,7 @@ mark {
   flex: 0 0 auto;
   height: 0.625rem;
   margin: 0 0.625rem;
-  background: transparent url(../img/icon-drag--horizontal.svg) no-repeat 50% 50%;
+  background: transparent url(img/icon-drag--horizontal.svg) no-repeat 50% 50%;
   background-size: 16px 3px;
   cursor: ns-resize;
 }
@@ -1839,7 +1862,7 @@ mark {
   z-index: 100;
   height: 100%;
   width: 0.625rem;
-  background: transparent url(../img/icon-drag--vertical.svg) no-repeat 50%;
+  background: transparent url(img/icon-drag--vertical.svg) no-repeat 50%;
   background-size: 3px 16px;
   cursor: ew-resize;
 }
