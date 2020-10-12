@@ -20,6 +20,7 @@ button {
 button.btn {
   padding: 0;
   border-radius: 2em;
+  transition: 0.3s;
 }
 button.btn a {
   display: flex;
@@ -28,6 +29,9 @@ button.btn a {
   padding: 0.5em 1.5em;
   min-height: 44px;
   font-size: 1.6rem;
+}
+button.btn:hover {
+  opacity: 0.85;
 }
 button.btn.success {
   background-color: teal;

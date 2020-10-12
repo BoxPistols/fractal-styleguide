@@ -12,12 +12,15 @@ button
 button.btn
   padding: 0
   border-radius: 2em
+  transition: .3s
   a
     @include fx
     @include fx-c
     padding: .5em 1.5em
     min-height: 44px
     font-size: 1.6rem
+  &:hover
+    opacity: .85
   &.success
     background-color: teal
     @include colorWhite

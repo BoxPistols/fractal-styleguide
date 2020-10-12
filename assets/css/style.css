@@ -103,6 +103,10 @@ a {
   color: #25303b;
 }
 
+.modeActive {
+  background: white;
+}
+
 .mg-1 {
   margin: 12px;
 }
@@ -114,15 +118,7 @@ a {
 /** Global Wrap **/
 .wrap {
   min-height: 100vh;
-  background-color: white;
   font-size: 1.6rem;
-}
-.wrap-def {
-  background-color: white;
-}
-.wrap-dark {
-  background-color: #25303b;
-  color: white;
 }
 
 .section {
@@ -229,6 +225,7 @@ button {
 button.btn {
   padding: 0;
   border-radius: 2em;
+  transition: 0.3s;
 }
 button.btn a {
   display: flex;
@@ -237,6 +234,9 @@ button.btn a {
   padding: 0.5em 1.5em;
   min-height: 44px;
   font-size: 1.6rem;
+}
+button.btn:hover {
+  opacity: 0.85;
 }
 button.btn.success {
   background-color: teal;
