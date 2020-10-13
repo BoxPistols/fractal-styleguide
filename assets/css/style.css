@@ -95,6 +95,10 @@ body {
   font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-justify: inter-ideograph;
+  zoom: 1;
 }
 
 /** Link **/
@@ -103,16 +107,9 @@ a {
   color: #25303b;
 }
 
-.modeActive {
-  background: white;
-}
-
-.mg-1 {
-  margin: 12px;
-}
-
-.pd-1 {
-  padding: 12px;
+/** image **/
+img {
+  width: 100%;
 }
 
 /** Global Wrapping Style  **/
@@ -142,6 +139,114 @@ a {
 
 .section {
   padding: 20px 24px 0;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.p-0 {
+  margin: 0px;
+}
+
+.m-4 {
+  margin: 4px;
+}
+
+.p-4 {
+  margin: 4px;
+}
+
+.m-8 {
+  margin: 8px;
+}
+
+.p-8 {
+  margin: 8px;
+}
+
+.m-12 {
+  margin: 12px;
+}
+
+.p-12 {
+  margin: 12px;
+}
+
+.m-16 {
+  margin: 16px;
+}
+
+.p-16 {
+  margin: 16px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.p-20 {
+  margin: 20px;
+}
+
+.m-24 {
+  margin: 24px;
+}
+
+.p-24 {
+  margin: 24px;
+}
+
+.m-28 {
+  margin: 28px;
+}
+
+.p-28 {
+  margin: 28px;
+}
+
+.m-32 {
+  margin: 32px;
+}
+
+.p-32 {
+  margin: 32px;
+}
+
+.m-36 {
+  margin: 36px;
+}
+
+.p-36 {
+  margin: 36px;
+}
+
+.m-40 {
+  margin: 40px;
+}
+
+.p-40 {
+  margin: 40px;
+}
+
+.m-44 {
+  margin: 44px;
+}
+
+.p-44 {
+  margin: 44px;
+}
+
+.m-48 {
+  margin: 48px;
+}
+
+.p-48 {
+  margin: 48px;
 }
 
 /** include **/
@@ -253,6 +358,14 @@ a {
   align-items: center;
 }
 
+.card {
+  margin: 24px;
+  border: 1px solid gray;
+}
+.card .card_textArea {
+  padding: 12px 24px 12px;
+}
+
 /** include **/
 .fx {
   display: flex;
@@ -323,9 +436,14 @@ button.btn.full {
   min-width: 100%;
 }
 
+.card {
+  widh: auto;
+}
+
 .head {
-  line-height: 1.85;
+  line-height: 1.5;
   font-weight: 500;
+  margin-bottom: 0.5em;
 }
 .head_1 {
   font-size: 3.2rem;

@@ -2294,7 +2294,7 @@ mark {
   -webkit-box-flex: 0;
   flex: 0 0 auto;
   height: 50%;
-  max-height: calc(100% - 3.75rem);
+  /* max-height: calc(100% - 3.75rem); */
   margin: 0 0.25rem;
 }
 
