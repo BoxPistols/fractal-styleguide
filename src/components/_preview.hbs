@@ -8,31 +8,15 @@
     <link media="all" rel="stylesheet" href="{{ path '/css/style.css' }}">
     <script src="{{ path '/js/app.js' }}"></script>
     <title>Preview Layout</title>
-    <style>
-      #toggleMode{
-        display: inline-block;
-        color: teal;
-        font-size: 20px;
-      }
-    </style>
   </head>
 
   <body>
-    <div id="toggleMode">Button</div>
-      <div id="previewArea">
-        {{{ yield }}}
-      </div>
+    <div id="toggleMode_area">
+      <div id="toggleMode">Dark</div>
+    </div>
+    <div id="previewArea">
+      {{{ yield }}}
     </div>
 
-  <script>
-    'use strict'
-    {
-      const preview = document.getElementById('previewArea')
-      const toggleMode = document.getElementById('toggleMode')
-      toggleMode.addEventListener('click', () => {
-        preview.classList.toggle('modeActive')
-      })
-    }
-  </script>
   </body>
 </html>

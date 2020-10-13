@@ -36,16 +36,18 @@ a
   &-1
     padding: 12px
 
-/** Global Wrap **/
-.wrap
+/** Global Wrapping Style  **/
+#previewArea
   min-height: 100vh
-  // background-color: $white
   font-size: 1.6rem
-  // &-def
-  //   background-color: $white
-  // &-dark
-  //   background-color: $black
-  //   color: $white
+  color: $white
+  background-color: $black
+  &.onColorLight
+    background-color: $white
+    color: $black
+
+.wrap
+  font-size: 1.6rem
 
 // section
 .section

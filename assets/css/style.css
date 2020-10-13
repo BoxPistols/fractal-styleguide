@@ -115,9 +115,19 @@ a {
   padding: 12px;
 }
 
-/** Global Wrap **/
-.wrap {
+/** Global Wrapping Style  **/
+#previewArea {
   min-height: 100vh;
+  font-size: 1.6rem;
+  color: white;
+  background-color: #25303b;
+}
+#previewArea.onColorLight {
+  background-color: white;
+  color: #25303b;
+}
+
+.wrap {
   font-size: 1.6rem;
 }
 
@@ -264,6 +274,36 @@ button.btn.middle {
 }
 button.btn.large {
   min-width: 480px;
+}
+
+#toggleMode_area {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+#toggleMode {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  color: ghostwhite;
+  background: black;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  use-select: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#toggleMode:hover {
+  opacity: 0.7;
+}
+#toggleMode.on {
+  background: orange;
+  color: white;
 }
 
 .head {
