@@ -125,8 +125,17 @@ a {
 #previewArea.onColorLight {
   background-color: white;
   color: #25303b;
+  animation: fade 0.8s;
 }
 
+@keyframes fade {
+  0% {
+    background-color: #25303b;
+  }
+  100% {
+    background-color: white;
+  }
+}
 .wrap {
   font-size: 1.6rem;
 }
@@ -198,6 +207,37 @@ a {
 }
 .color__atm.grayDark {
   background-color: #44484b;
+}
+
+#toggleMode_area {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  z-index: 2;
+}
+
+#toggleMode {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  color: ghostwhite;
+  background: black;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  use-select: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#toggleMode:hover {
+  opacity: 0.7;
+}
+#toggleMode.on {
+  background: orange;
+  color: white;
 }
 
 .fx {
@@ -274,36 +314,6 @@ button.btn.middle {
 }
 button.btn.large {
   min-width: 480px;
-}
-
-#toggleMode_area {
-  position: absolute;
-  top: 4px;
-  right: 4px;
-}
-
-#toggleMode {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 12px;
-  color: ghostwhite;
-  background: black;
-  border-radius: 20px;
-  font-size: 1.4rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  use-select: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-#toggleMode:hover {
-  opacity: 0.7;
-}
-#toggleMode.on {
-  background: orange;
-  color: white;
 }
 
 .head {
