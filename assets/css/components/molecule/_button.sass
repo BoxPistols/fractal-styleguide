@@ -16,6 +16,7 @@ button.btn
   a
     @include fx
     @include fx-c
+    width: auto
     padding: .5em 1.5em
     min-height: 44px
     font-size: 1.6rem
@@ -29,7 +30,7 @@ button.btn
     @include colorWhite
   &.danger
     background-color: tomato
-  // TODO: size-set btn-xs btn-s btm-m btn-l btn-full btn-stretch etc.
+    @include colorWhite
   &.min
     min-width: auto
   &.normal
@@ -38,3 +39,5 @@ button.btn
     min-width: 320px
   &.large
     min-width: 480px
+  &.full
+    min-width: 100%

@@ -281,6 +281,7 @@ button.btn a {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: auto;
   padding: 0.5em 1.5em;
   min-height: 44px;
   font-size: 1.6rem;
@@ -303,6 +304,9 @@ button.btn.warning a {
 button.btn.danger {
   background-color: tomato;
 }
+button.btn.danger a {
+  color: white;
+}
 button.btn.min {
   min-width: auto;
 }
@@ -314,6 +318,9 @@ button.btn.middle {
 }
 button.btn.large {
   min-width: 480px;
+}
+button.btn.full {
+  min-width: 100%;
 }
 
 .head {

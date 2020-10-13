@@ -21,9 +21,23 @@
       }
     },
     {
+      "name": "large",
+      "context": {
+        "text": "送信する",
+        "className": "large"
+      }
+    },
+    {
+      "name": "full",
+      "context": {
+        "text": "送信する",
+        "className": "full"
+      }
+    },
+    {
       "name": "success",
       "context": {
-        "text": "Success",
+        "text": "success",
         "className": "normal success"
       }
     },
@@ -32,6 +46,13 @@
       "context": {
         "text": "warning",
         "className": "normal warning"
+      }
+    },
+    {
+      "name": "danger",
+      "context": {
+        "text": "danger",
+        "className": "normal danger"
       }
     }
   ]
