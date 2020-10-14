@@ -21,7 +21,7 @@ This is Design System
 
 ## Get Start
 
-```git
+```
 git clone https://github.com/BoxPistols/fractal-styleguide.git
 ```
 

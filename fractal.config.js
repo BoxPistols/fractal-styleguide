@@ -40,7 +40,7 @@ const myCustomisedTheme = mandelbrot({
     lang: 'ja',
     labels: {
         search: {
-            placeholder: 'コンポネント検索',
+            placeholder: 'Search...',
         },
     },
     //panels: ['html', 'view', 'context', 'notes', 'info'],

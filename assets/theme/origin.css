@@ -644,14 +644,14 @@ mark {
   background-image: url(img/icon-navigation-closed-ltr.svg);
   content: "";
   position: absolute;
-  top: 0.85em;
+  top: 0.9em;
 }
 
 [dir=rtl] .Tree-collection.is-closed .Tree-collectionLabel::before {
   background-image: url(img/icon-navigation-closed-rtl.svg);
   content: "";
   position: absolute;
-  top: 0.85em;
+  top: 0.9em;
 }
 
 .Tree-collectionLabel {
