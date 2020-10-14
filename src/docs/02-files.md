@@ -1,6 +1,13 @@
-## 構造
+# files
+- assets/css, js
+  - Main UI Modules
+- assets/theme
+  - fractal preview design
+- src
+  - UI components create
 
-<!-- TODO: 別途WikiTool docsifyなど -->
+
+<!-- TODO: 別途WikiTool GitBook/docsifyなど -->
 
 ```js
 .
