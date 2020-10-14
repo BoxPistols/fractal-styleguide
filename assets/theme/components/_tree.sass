@@ -109,14 +109,17 @@
     // transform: scale(0.9, 0.7) rotate(90deg)
 
 .Tree-item
+  padding-left: .5rem
   font-size: 0.875rem
-  line-height: 1.71429
+  line-height: 1.5
+  max-width: 96%
+
 
 .Tree-entityLink
   display: flex
   align-items: center
-  padding-top: 0.375rem
-  padding-bottom: 0.375rem
+  padding-top: 0.275rem
+  padding-bottom: 0.275rem
   text-decoration: none
 
   &:hover
@@ -148,13 +151,13 @@
   padding-right: 0
 
 .Tree-depth-1 .Tree-collectionLabel::before
-  offset-inline-start: -0.75rem
+  offset-inline-start: -0.85rem
 
 [dir=ltr] .Tree-depth-1 .Tree-collectionLabel::before
-  left: -0.75rem
+  left: -0.85rem
 
 [dir=rtl] .Tree-depth-1 .Tree-collectionLabel::before
-  right: -0.75rem
+  right: -0.85rem
 
 .Tree-depth-1 .Tree-entityLink
   -webkit-padding-start: 1rem
@@ -377,6 +380,9 @@
 
 [dir=rtl] .Tree-depth-8 .Tree-entityLink
   padding-right: 8rem
+
+.Tree-depth-1, .Tree-depth-2, .Tree-depth-3, .Tree-depth-4
+  padding-left: .25rem
 
 .Tree-aside
   font-size: 0.875rem
