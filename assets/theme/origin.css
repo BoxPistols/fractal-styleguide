@@ -1679,7 +1679,7 @@ mark {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: #234;
+  background-color: #232426;
 }
 
 .Browser-controls {
@@ -2209,7 +2209,7 @@ mark {
   max-height: 2.8rem;
   padding: 0.5rem 0.75rem 0.5rem 1.6rem;
   margin-left: 0.25rem;
-  background: linear-gradient(145deg, #484b50, #2c3031);
+  background: linear-gradient(145deg, #1a1c21, #313435);
 }
 .Pen-header .Status {
   -webkit-margin-start: auto;
