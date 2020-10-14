@@ -1,12 +1,7 @@
-@import ../../assets/css/utility/block
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap')
 
+@import ../../assets/css/utility/block
 @import "./components/mixin"
-//**
-  ** Base
-  **
-  **//
-
 
 .FileBrowser
   position: static
@@ -153,29 +148,8 @@
 .Frame-panel
   position: relative
   overflow: auto
+  padding: 0
   -webkit-overflow-scrolling: touch
-
-.Frame-panel--sidebar
-  -webkit-border-end: 1px solid rgba(83, 83, 99, 0.25)
-  border-inline-end: 1px solid rgba(83, 83, 99, 0.25)
-  -webkit-box-flex: 0
-  flex: 0 0 auto
-  width: 240px
-  min-width: 240px
-  max-width: 480px
-  background-color: #234
-  background: linear-gradient(145deg, #000, #006f98)
-  padding: 1rem 0
-
-[dir=ltr] .Frame-panel--sidebar
-  border-right: 1px solid rgba(83, 83, 99, 0.25)
-
-[dir=rtl] .Frame-panel--sidebar
-  border-left: 1px solid rgba(83, 83, 99, 0.25)
-
-@media (max-width: 31.24em)
-  .Frame-panel--sidebar
-    max-width: 240px
 
 .Frame-panel--main
   -webkit-box-flex: 1
@@ -193,22 +167,17 @@
       display: none
 
 .Frame-handle
-  -webkit-transition: all 0.15s ease-out
-  transition: all 0.15s ease-out
-  -webkit-margin-end: -0.25rem
   margin-inline-end: -0.25rem
-  -webkit-box-flex: 0
   flex: 0 0 auto
   position: relative
   z-index: 2
   height: 100%
   width: 0.25rem
-
-  //background: transparent url(img/icon-drag--vertical.svg) no-repeat 50% 45%
-  background: green
-
-  //background-size: 3px 16px
+  background: transparent url(img/icon-drag--vertical.svg) no-repeat 50% 45%
+  background-color: gray
+  background-size: 3px 16px
   cursor: ew-resize
+  transition: background-color .3s
 
   &:hover
     //background-color: rgba(83, 83, 99, 0.05)
@@ -351,19 +320,15 @@
     content: ""
 
   + .Navigation-group
-    margin-top: 1.5rem
+    margin-top: .85rem
 
 .Pen
-  display: -webkit-box
   display: flex
-  -webkit-box-orient: vertical
-  -webkit-box-direction: normal
   flex-direction: column
-  -webkit-box-align: stretch
   align-items: stretch
   height: 100%
   overflow: hidden
-  background: #111
+  background: gray
 
   &.is-resizing
     cursor: -webkit-grabbing
@@ -374,17 +339,13 @@
       cursor: grabbing
 
 .Pen-header
-  display: -webkit-box
   display: flex
-  -webkit-box-flex: 0
   flex: 0 0 auto
-  max-height: 3rem
-  padding: 0.75rem
-  -webkit-box-align: center
   align-items: center
-
-  //background-color: #123
-  background: linear-gradient(145deg, #123, #006f98)
+  max-height: 2.8rem
+  padding: .5rem .75rem .5rem 1.6rem
+  margin-left: .25rem
+  background: linear-gradient(145deg, #484b50, #2c3031)
 
   .Status
     -webkit-margin-start: auto
@@ -423,7 +384,7 @@
       color: transparent !important
 
 .Pen-title
-  font-size: 1.25rem
+  font-size: 1.15rem
   line-height: 1.33333
   font-weight: 400
 
@@ -434,7 +395,8 @@
 
 .Pen-previewLink
   +fx
-  padding: 0 0 0 1rem
+  +fx-c
+  padding: 0 0 0 .5rem
   &:active, &:hover, &:link, &:visited
     color: yellow
     text-decoration: none
@@ -467,8 +429,8 @@
   transition: all 0.15s ease-out
   -webkit-box-flex: 0
   flex: 0 0 auto
-  height: 0.625rem
-  margin: 0 0.625rem
+  height: 0.25rem
+  margin: 0 0.25rem
   background: transparent url(img/icon-drag--horizontal.svg) no-repeat 50% 50%
   background-size: 16px 3px
   cursor: ns-resize
@@ -496,13 +458,18 @@
   display: block
   pointer-events: all
   visibility: visible
+  background-color: gray
+  transition: .3s
+  &:hover, &:active, &:focus
+    background-color: deeppink
+
 
 .Pen-info
   -webkit-box-flex: 1
   flex: 1 1 auto
   position: relative
   overflow: hidden
-  margin: 0.625rem
+  margin: 0.25rem
   margin-top: 0
   border: 1px solid rgba(83, 83, 99, 0.25)
 
@@ -527,7 +494,7 @@
 @media (min-width: 31.25em)
   .Preview
     // background-color: #123
-    background: linear-gradient(145deg, #000, #006f98)
+    background: linear-gradient(145deg, #565657, #274650)
     border: 1px solid rgba(83, 83, 99, 0.25)
 
 .Preview-wrapper
@@ -599,10 +566,7 @@
   opacity: 0
 
 .Preview-handle
-  -webkit-border-start: 1px solid rgba(83, 83, 99, 0.25)
   border-inline-start: 1px solid rgba(83, 83, 99, 0.25)
-  -webkit-transition: all 0.15s ease-out
-  transition: all 0.15s ease-out
   offset-inline-end: 0
   position: absolute
   top: 0px
@@ -613,6 +577,7 @@
   background: transparent url(img/icon-drag--vertical.svg) no-repeat 50%
   background-size: 3px 16px
   cursor: ew-resize
+  transition: 0.3s
 
 [dir=ltr] .Preview-handle
   border-left: 1px solid rgba(83, 83, 99, 0.25)
@@ -621,8 +586,8 @@
   border-right: 1px solid rgba(83, 83, 99, 0.5)
 
 .Preview-handle
-  background-color: green
-
+  background-color: gray
+  transition: .3s
   &:hover
     //background-color: rgba(83, 83, 99, 0.05)
     background-color: deeppink

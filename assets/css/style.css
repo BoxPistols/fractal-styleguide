@@ -153,12 +153,20 @@ img {
   margin: 0px;
 }
 
+.mx-0 {
+  margin: auto 0px;
+}
+
 .m-4 {
   margin: 4px;
 }
 
 .p-4 {
   margin: 4px;
+}
+
+.mx-4 {
+  margin: auto 4px;
 }
 
 .m-8 {
@@ -169,12 +177,20 @@ img {
   margin: 8px;
 }
 
+.mx-8 {
+  margin: auto 8px;
+}
+
 .m-12 {
   margin: 12px;
 }
 
 .p-12 {
   margin: 12px;
+}
+
+.mx-12 {
+  margin: auto 12px;
 }
 
 .m-16 {
@@ -185,12 +201,20 @@ img {
   margin: 16px;
 }
 
+.mx-16 {
+  margin: auto 16px;
+}
+
 .m-20 {
   margin: 20px;
 }
 
 .p-20 {
   margin: 20px;
+}
+
+.mx-20 {
+  margin: auto 20px;
 }
 
 .m-24 {
@@ -201,12 +225,20 @@ img {
   margin: 24px;
 }
 
+.mx-24 {
+  margin: auto 24px;
+}
+
 .m-28 {
   margin: 28px;
 }
 
 .p-28 {
   margin: 28px;
+}
+
+.mx-28 {
+  margin: auto 28px;
 }
 
 .m-32 {
@@ -217,12 +249,20 @@ img {
   margin: 32px;
 }
 
+.mx-32 {
+  margin: auto 32px;
+}
+
 .m-36 {
   margin: 36px;
 }
 
 .p-36 {
   margin: 36px;
+}
+
+.mx-36 {
+  margin: auto 36px;
 }
 
 .m-40 {
@@ -233,6 +273,10 @@ img {
   margin: 40px;
 }
 
+.mx-40 {
+  margin: auto 40px;
+}
+
 .m-44 {
   margin: 44px;
 }
@@ -241,12 +285,20 @@ img {
   margin: 44px;
 }
 
+.mx-44 {
+  margin: auto 44px;
+}
+
 .m-48 {
   margin: 48px;
 }
 
 .p-48 {
   margin: 48px;
+}
+
+.mx-48 {
+  margin: auto 48px;
 }
 
 /** include **/

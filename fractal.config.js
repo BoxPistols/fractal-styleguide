@@ -33,13 +33,17 @@ const mandelbrot = require('@frctl/mandelbrot')
 // specify a directory to hold the theme override skines
 
 const myCustomisedTheme = mandelbrot({
-  nav: ['docs', 'search', 'components', 'information'],
-  //skin: 'origin',
-  styles: ['', '/theme/origin.css', ''],
-  highlightStyles:
-    'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/monokai.min.css',
-  // lang: 'ja',
-  //panels: ['html', 'view', 'context', 'notes', 'info'],
+    nav: ['docs', 'search', 'components', 'information'],
+    //skin: 'origin',
+    styles: ['', '/theme/origin.css', ''],
+    highlightStyles: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/monokai.min.css',
+    lang: 'ja',
+    labels: {
+        search: {
+            placeholder: 'コンポネント検索',
+        },
+    },
+    //panels: ['html', 'view', 'context', 'notes', 'info'],
 })
 
 // myCustomisedTheme.addLoadPath(__dirname + '/src/theme-overrides')
