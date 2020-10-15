@@ -312,6 +312,7 @@ img {
   }
 }
 .wrap {
+  padding: 3.2rem 0 1.6rem;
   font-size: 1.6rem;
 }
 
@@ -363,6 +364,7 @@ img {
   align-items: center;
   padding: 0.1rem 0.8rem;
   font-size: 1.4rem;
+  border: 1px solid #c6cbce;
   border-radius: 1.4rem;
   background-color: rgba(255, 255, 255, 0.9);
 }
