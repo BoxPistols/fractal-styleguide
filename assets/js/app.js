@@ -25,12 +25,13 @@
       const windowSizeView = document.getElementById('windowSizeView')
       let clientWidth = preview.clientWidth
       windowSizeView.innerHTML = clientWidth + 'px'
+      let sizeView = windowSizeView.innerHTML
       /* for Resize, SetTimer for Performance  */
       const classes = ["min", "sm", "md", "lg", "xl"];
       window.addEventListener('resize', function (event) {
         let clientWidth = preview.clientWidth
         let resizeTimer
-        windowSizeView.innerHTML = clientWidth + 'px'
+        sizeView = clientWidth + 'px'
         windowSizeView.classList.remove(...classes)
         if (clientWidth > 1440) {
           windowSizeView.classList.add('xl')
