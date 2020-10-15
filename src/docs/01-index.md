@@ -9,9 +9,9 @@ description: overview
 
 Fractal Official Document
 
-{% embed url="https://fractal.build/" %}
-
 {% embed url="https://fractal.build/guide/" %}
+
+{% embed url="https://fractal.build/" %}
 
 {% embed url="https://fractal.build/guide/core-concepts/view-templates.html" %}
 
