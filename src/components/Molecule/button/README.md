@@ -1,5 +1,0 @@
-# Button
-
-## Variation
-- Size
-- Color
