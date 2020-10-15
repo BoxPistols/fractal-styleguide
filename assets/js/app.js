@@ -85,13 +85,13 @@
           value('px Note-PC')
         } else if (clientWidth > 768) {
           sizeColor('md')
-          value('px SP~Tablet')
+          value('px SP-Tablet')
         } else if (clientWidth > 480) {
           sizeColor('sm')
           value('px SP')
         } else if (clientWidth < 481) {
           sizeColor('min')
-          value('px Small SP')
+          value('px Small-SP')
         } else {
           windowSizeView.classList.remove(...classes)
         }

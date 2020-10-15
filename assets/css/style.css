@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /** include **/
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap");
 .fx {
   display: flex;
@@ -318,6 +320,7 @@ img {
 }
 
 #toggleMode {
+  font-family: "Nova Mono", monospace;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -350,6 +353,7 @@ img {
   z-index: 3;
 }
 #windowSizeView_area #windowSizeView {
+  font-family: "Nanum Gothic Coding", monospace;
   display: flex;
   justify-content: center;
   align-items: center;

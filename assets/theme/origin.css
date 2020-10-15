@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
 .fx {
   display: flex;
 }
@@ -600,21 +602,22 @@ mark {
   margin-left: 3px;
 }
 
-[dir=rtl] .Status-dot + .Status-dot {
+[dir=rtl] .Statu9dot + .Status-dot {
   margin-right: 3px;
 }
 
 .Status-label {
-  font-size: 0.75rem;
+  font-family: "Nanum Gothic Coding", monospace;
+  font-family: "Nova Mono", monospace;
+  font-size: 0.85rem;
   line-height: 1.66667;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.1em;
   text-transform: capitalize;
   display: inline-block;
   border-radius: 2rem;
   padding: 0.125rem 0.75rem;
   color: #fff;
   white-space: nowrap;
-  opacity: 0.85;
 }
 .Status-label + .Status-label {
   -webkit-margin-start: 0.25rem;
@@ -673,6 +676,7 @@ mark {
 }
 
 .Tree-title {
+  font-family: "Nova Mono", monospace;
   font-size: 1.1rem;
   line-height: 1.5;
   letter-spacing: 0.05em;
@@ -709,7 +713,7 @@ mark {
   background-image: url(img/icon-navigation-closed-ltr.svg);
   content: "";
   position: absolute;
-  top: 0.9em;
+  top: 0.6em;
 }
 
 [dir=rtl] .Tree-collection.is-closed .Tree-collectionLabel::before {
@@ -720,8 +724,9 @@ mark {
 }
 
 .Tree-collectionLabel {
-  font-size: 0.875rem;
-  line-height: 1.71429;
+  font-family: "Nanum Gothic Coding", monospace;
+  font-size: 0.9rem;
+  line-height: 1.2;
   display: block;
   position: relative;
   width: 88%;
@@ -760,7 +765,7 @@ mark {
   display: inline-block;
   position: absolute;
   content: "";
-  top: 0.8rem;
+  top: 0.6rem;
   width: 0.75rem;
   height: 0.75rem;
   background-image: url(img/icon-navigation-opened.svg);
@@ -773,11 +778,12 @@ mark {
 .Tree-item {
   padding-left: 0.5rem;
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.2;
   max-width: 96%;
 }
 
 .Tree-entityLink {
+  font-family: "Nanum Gothic Coding", monospace;
   display: flex;
   align-items: center;
   padding-top: 0.275rem;
@@ -1953,9 +1959,7 @@ mark {
 }
 
 .Browser-tab {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-flex: 1;
   flex: auto;
   white-space: nowrap;
 }
