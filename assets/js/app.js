@@ -2,79 +2,111 @@
 {
   // ja Move Timing is after loading
   window.onload = function () {
-    /* for Preview Design Darkmode <=> LightMode */
     /*
-     * preview is Global use
-     * 1: DarkLightMode
+     * Global Use const
+     * 1: DarkLight-Mode / Change Color-Scheme & Save LocalStorage Color State
      * 2: ResizeView
      */
     const preview = document.getElementById('previewArea')
-    /* Dark/Light Toggle */
+    const toggleMode = document.getElementById('toggleMode')
+    /* Change Dark/Light-Mode color-scheme save LocalStorage */
     {
-      const toggleMode = document.getElementById('toggleMode')
+      // get Status on loading
+      let ColorActive = localStorage.getItem('ColorActive')
+      // Toggle Color Status
+      const enableColorActive = () => {
+        localStorage.setItem('ColorActive', 'enable')
+        preview.classList.add('onColorLight')
+        toggleMode.classList.add('on')
+        toggleMode.innerHTML = 'Light'
+      }
+      const disableColorActive = () => {
+        localStorage.setItem('ColorActive', null)
+        preview.classList.remove('onColorLight')
+        toggleMode.classList.remove('on')
+        toggleMode.innerHTML = 'Dark'
+      }
+      if (ColorActive === 'enable') {
+        enableColorActive()
+      } else {
+        disableColorActive()
+      }
+      // Event
       toggleMode.addEventListener('click', () => {
-        preview.classList.toggle('onColorLight')
-        toggleMode.classList.toggle('on')
-        if (toggleMode.innerHTML === 'Dark') {
-          toggleMode.innerHTML = 'Light'
+        if (preview.classList.contains('onColorLight')) {
+          preview.classList.remove('onColorLight')
         } else {
-          toggleMode.innerHTML = 'Dark'
+          preview.classList.add('onColorLight')
+        }
+        // LocalStorage
+        ColorActive = localStorage.getItem('ColorActive')
+        if (ColorActive !== 'enable') {
+          enableColorActive()
+        } else {
+          disableColorActive()
         }
       })
     }
-    /* End Dark/Light Toggle */
+    /* End Change Dark/Light-Mode color-scheme save LocalStorage */
 
     /* Get Resize on Preview-Window for BreakPoint */
     {
-      // TODO: refact
       const windowSizeView = document.getElementById('windowSizeView')
       // first view size
       const w = preview.clientWidth
-      windowSizeView.innerHTML = w + 'px'
+      if(w < 1){
+        windowSizeView.innerHTML = ('size...')
+      }else{
+        windowSizeView.innerHTML = w + 'px'
+      }
       // Size View UI on CSS
       const classes = ['min', 'sm', 'md', 'lg', 'xl']
-      // preview size view
-      // let sizeView = windowSizeView.innerHTML
-      // on Resizing
+
+      // Resizing 横幅のハンドルバー操作中にサイズ幅をタグに表示
       window.addEventListener('resize', function (event) {
-        let clientWidth = preview.clientWidth
         /* for Resize, SetTimer for Performance  */
-        let resizeTimer
+        let clientWidth = preview.clientWidth
+        // view size-text
         const value = (x) => {
-          return clientWidth + x
+          return (windowSizeView.innerHTML = clientWidth + x)
+        }
+        // Change className
+        const sizeColor = (c) => {
+          return windowSizeView.classList.add(c)
         }
         // reset classList
         windowSizeView.classList.remove(...classes)
         // View Styling & Change Device
         if (clientWidth > 1440) {
-          windowSizeView.classList.add('xl')
-          windowSizeView.innerHTML = value('px DeskTop-PC')
+          sizeColor('xl')
+          value('px DeskTop-PC')
         } else if (clientWidth > 1024) {
-          windowSizeView.classList.add('lg')
-          windowSizeView.innerHTML = value('px Note-PC')
+          sizeColor('lg')
+          value('px Note-PC')
         } else if (clientWidth > 768) {
-          windowSizeView.classList.add('md')
-          windowSizeView.innerHTML = value('px SP~Tablet')
+          sizeColor('md')
+          value('px SP~Tablet')
         } else if (clientWidth > 480) {
-          windowSizeView.classList.add('sm')
-          windowSizeView.innerHTML = value('px SP')
+          sizeColor('sm')
+          value('px SP')
         } else if (clientWidth < 481) {
-          windowSizeView.classList.add('min')
-          windowSizeView.innerHTML = value('px Small SP')
+          sizeColor('min')
+          value('px Small SP')
         } else {
           windowSizeView.classList.remove(...classes)
         }
         // console.log(clientWidth)
+        let resizeTimer
         if (!resizeTimer) {
           clearTimeout(resizeTimer)
         }
         resizeTimer = setTimeout(function () {
           onResize()
-        }, 500)
+        }, 800)
       })
-      // リサイズ後の処理 = 0.5秒後にクリア
+      // リサイズ後の処理 = 0.8秒後にリサイズ処理のクリア
       function onResize() {}
     }
+    /* End Get Resize  */
   }
-  /* End Get Resize  */
 }

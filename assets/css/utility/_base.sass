@@ -36,16 +36,23 @@ img
   font-size: 1.6rem
   color: $white
   background-color: $black
+  // animation: fade-rev .2s
   &.onColorLight
     background-color: $white
     color: $black
-    animation: fade .8s
+    animation: fade .9s
 
 @keyframes fade
   0%
     background-color: $black
   100%
     background-color: $white
+
+// @keyframes fade-rev
+//   0%
+//     background-color: transparent
+//   100%
+//     background-color: $black
 
 .wrap
   padding: 3.2rem 0 1.6rem

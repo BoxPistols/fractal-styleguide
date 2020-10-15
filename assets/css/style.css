@@ -290,7 +290,7 @@ img {
 #previewArea.onColorLight {
   background-color: white;
   color: #25303b;
-  animation: fade 0.8s;
+  animation: fade 0.9s;
 }
 
 @keyframes fade {
@@ -314,7 +314,7 @@ img {
   position: absolute;
   top: 4px;
   right: 4px;
-  z-index: 2;
+  z-index: 3;
 }
 
 #toggleMode {
@@ -332,7 +332,7 @@ img {
   -ms-user-select: none;
   use-select: none;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 #toggleMode:hover {
   opacity: 0.7;
@@ -347,28 +347,31 @@ img {
   top: 4px;
   left: 4px;
   opacity: 0.9;
+  z-index: 3;
 }
 #windowSizeView_area #windowSizeView {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 60px;
   padding: 0.1rem 0.8rem;
   font-size: 1.4rem;
   border: 1px solid #c6cbce;
   border-radius: 1.4rem;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-#windowSizeView_area #windowSizeView.sm {
   background-color: rgba(255, 192, 203, 0.9);
 }
+#windowSizeView_area #windowSizeView.sm {
+  background-color: rgba(135, 206, 235, 0.9);
+}
 #windowSizeView_area #windowSizeView.md {
-  background-color: rgba(255, 255, 0, 0.9);
+  background-color: rgba(30, 35, 37, 0.9);
+  color: ghostwhite;
 }
 #windowSizeView_area #windowSizeView.lg {
-  background-color: rgba(255, 165, 0, 0.9);
+  background-color: rgba(0, 255, 0, 0.9);
 }
 #windowSizeView_area #windowSizeView.xl {
-  background-color: rgba(0, 255, 0, 0.9);
+  background-color: rgba(255, 255, 0, 0.9);
 }
 
 .card {
