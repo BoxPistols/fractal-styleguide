@@ -1,47 +1,11 @@
-# fractal
+# files
 
-## About
-
-This is Design System
-
-## first setting \(once\)
-
-```text
-yarn run install
-```
-
-## start move
-
-```text
-yarn run start
-```
-
-## sass compile
-
-```text
-yarn run sass
-```
-
-* sass to css
-  * assets css
-    * Main UI Modules
-  * assets theme
-    * fractal preview design
-  * src
-    * UI components create
-
-## build
-
-```text
-yarn run build
-```
-
-* compile to docs
-* static files
-
-## tree
-
-2020/10/12 17:01:19
+* assets/css, js
+  * Main UI Modules
+* assets/theme
+  * fractal preview design
+* src
+  * UI components create
 
 ```javascript
 .
