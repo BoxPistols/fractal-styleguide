@@ -9,19 +9,19 @@ description: overview
 
 Fractal Official Document
 
-{% embed url="https://fractal.build/guide/" %}
+https://fractal.build/guide/
 
-{% embed url="https://fractal.build/" %}
+https://fractal.build/
 
-{% embed url="https://fractal.build/guide/core-concepts/view-templates.html" %}
+https://fractal.build/guide/core-concepts/view-templates.html
 
-{% embed url="https://fractal.build/guide/components/" %}
+https://fractal.build/guide/components/
 
-{% embed url="https://fractal.build/guide/collections/\#ordering-collections" %}
+https://fractal.build/guide/collections/#ordering-collections
 
-{% embed url="https://fractal.build/guide/web/\#configuration" %}
+https://fractal.build/guide/web/#configuration
 
-{% embed url="https://fractal.build/guide/cli/\#running-commands" %}
+https://fractal.build/guide/cli/#running-commands
 
 
 
@@ -69,4 +69,3 @@ yarn run css
 ```text
 yarn run build
 ```
-

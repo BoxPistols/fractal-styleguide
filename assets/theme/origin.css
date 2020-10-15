@@ -350,6 +350,71 @@ mark {
   background-color: rgba(34, 136, 255, 0.3);
 }
 
+/** include **/
+.fx {
+  display: flex;
+}
+
+.fx-col {
+  flex-direction: column;
+}
+
+.fx-c {
+  justify-content: center;
+  align-items: center;
+}
+
+/** Colors **/
+/** preview for color **/
+.color__org {
+  display: flex;
+  flex-wrap: wrap;
+}
+.color__mol {
+  display: flex;
+  margin: 8px;
+}
+.color__mol.info {
+  flex-direction: column;
+  justify-content: center;
+  color: #c6cbce;
+}
+.color__atm {
+  width: 84px;
+  height: 84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.6rem;
+  border: 2px solid #c6cbce;
+  border-radius: 8px;
+  color: white;
+}
+.color__atm.base {
+  background-color: white;
+  color: #6e7377;
+}
+.color__atm.base .figure {
+  color: gray;
+}
+.color__atm.main {
+  background-color: #53a6c7;
+}
+.color__atm.accent {
+  background-color: #cf5da0;
+}
+.color__atm.gray {
+  background-color: #6e7377;
+}
+.color__atm.grayLight {
+  background-color: #c6cbce;
+}
+.color__atm.grayDark {
+  background-color: #44484b;
+}
+
 .Error-stack {
   margin-top: 1.5rem;
 }
@@ -2004,14 +2069,14 @@ mark {
 }
 
 .Prose {
-  font-size: 1rem;
+  font-size: 0.85rem;
   line-height: 1.75;
   max-width: 70vw;
   width: 100%;
   hanging-punctuation: first;
 }
 .Prose > :not(pre):not(:last-child) {
-  margin-bottom: 0.75em;
+  margin-bottom: 0.5em;
 }
 .Prose ol, .Prose ul {
   -webkit-padding-start: 1.25em;
