@@ -1,7 +1,6 @@
 @charset "UTF-8";
+/** include **/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap");
-/** include **/
-/** include **/
 .fx {
   display: flex;
 }
@@ -77,68 +76,6 @@
 .fx-c {
   justify-content: center;
   align-items: center;
-}
-
-/** reset **/
-*, ::after, ::before {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 10px;
-  line-height: 1.5;
-  font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-justify: inter-ideograph;
-  zoom: 1;
-}
-
-/** Link **/
-a {
-  text-decoration: none;
-  color: #25303b;
-}
-
-/** image **/
-img {
-  width: 100%;
-}
-
-/** Global Wrapping Style  **/
-#previewArea {
-  min-height: 100vh;
-  font-size: 1.6rem;
-  color: white;
-  background-color: #25303b;
-}
-#previewArea.onColorLight {
-  background-color: white;
-  color: #25303b;
-  animation: fade 0.8s;
-}
-
-@keyframes fade {
-  0% {
-    background-color: #25303b;
-  }
-  100% {
-    background-color: white;
-  }
-}
-.wrap {
-  font-size: 1.6rem;
-}
-
-.section {
-  padding: 20px 24px 0;
 }
 
 .m-auto {
@@ -301,69 +238,85 @@ img {
   margin: auto 48px;
 }
 
-/** include **/
-.fx {
-  display: flex;
+/* * Break Point
+ * *  min-width
+ * *     sm: 480px
+ * *     md: 768px
+ * *     lg: 1024px
+ * *     xl: 1440px
+ * * min-width = max-width + 1px
+ * */
+@media screen and (max-width: 480px) {
+  .foo {
+    color: orange;
+  }
+}
+@media screen and (min-width: 481px) {
+  .foo {
+    color: red;
+  }
 }
 
-.fx-col {
-  flex-direction: column;
+/** reset **/
+*, ::after, ::before {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.fx-c {
-  justify-content: center;
-  align-items: center;
+html {
+  font-size: 62.5%;
 }
 
-/** Colors **/
-/** preview for color **/
-.color__org {
-  display: flex;
-  flex-wrap: wrap;
+body {
+  font-size: 10px;
+  line-height: 1.5;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-justify: inter-ideograph;
+  zoom: 1;
 }
-.color__mol {
-  display: flex;
-  margin: 8px;
+
+/** Link **/
+a {
+  text-decoration: none;
+  color: #25303b;
 }
-.color__mol.info {
-  flex-direction: column;
-  justify-content: center;
-  color: #c6cbce;
+
+/** image **/
+img {
+  width: 100%;
 }
-.color__atm {
-  width: 84px;
-  height: 84px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+/** Global Wrapping Style  **/
+#previewArea {
+  min-height: 100vh;
   font-size: 1.6rem;
-  border: 2px solid #c6cbce;
-  border-radius: 8px;
   color: white;
+  background-color: #25303b;
 }
-.color__atm.base {
+#previewArea.onColorLight {
   background-color: white;
-  color: #6e7377;
+  color: #25303b;
+  animation: fade 0.8s;
 }
-.color__atm.base .figure {
-  color: gray;
+
+@keyframes fade {
+  0% {
+    background-color: #25303b;
+  }
+  100% {
+    background-color: white;
+  }
 }
-.color__atm.main {
-  background-color: #53a6c7;
+.wrap {
+  font-size: 1.6rem;
 }
-.color__atm.accent {
-  background-color: #cf5da0;
-}
-.color__atm.gray {
-  background-color: #6e7377;
-}
-.color__atm.grayLight {
-  background-color: #c6cbce;
-}
-.color__atm.grayDark {
-  background-color: #44484b;
+
+.section {
+  padding: 20px 24px 0;
 }
 
 #toggleMode_area {
@@ -398,17 +351,32 @@ img {
   color: white;
 }
 
-.fx {
+#windowSizeView_area {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  opacity: 0.9;
+}
+#windowSizeView_area #windowSizeView {
   display: flex;
-}
-
-.fx-col {
-  flex-direction: column;
-}
-
-.fx-c {
   justify-content: center;
   align-items: center;
+  padding: 0.1rem 0.8rem;
+  font-size: 1.4rem;
+  border-radius: 1.4rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+#windowSizeView_area #windowSizeView.sm {
+  background-color: rgba(255, 192, 203, 0.9);
+}
+#windowSizeView_area #windowSizeView.md {
+  background-color: rgba(255, 255, 0, 0.9);
+}
+#windowSizeView_area #windowSizeView.lg {
+  background-color: rgba(255, 165, 0, 0.9);
+}
+#windowSizeView_area #windowSizeView.xl {
+  background-color: rgba(0, 255, 0, 0.9);
 }
 
 .card {
