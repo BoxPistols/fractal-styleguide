@@ -246,17 +246,7 @@
  * *     xl: 1440px
  * * min-width = max-width + 1px
  * */
-@media screen and (max-width: 480px) {
-  .foo {
-    color: orange;
-  }
-}
-@media screen and (min-width: 481px) {
-  .foo {
-    color: red;
-  }
-}
-
+/** Example **/
 /** reset **/
 *, ::after, ::before {
   margin: 0;

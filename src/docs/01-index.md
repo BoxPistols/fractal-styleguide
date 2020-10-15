@@ -1,12 +1,18 @@
 ---
+
 title: Fractal
+
 ---
 
-## Fractal Official Document
+![](/docs/img/favicon.png)
+
+Fractal Official Document
 
 https://fractal.build/
 
+
 ---
+
 
 ## About
 
