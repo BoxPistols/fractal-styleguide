@@ -1,0 +1,43 @@
+/** include **/
+@import "../../utility/block"
+
+/** Button default **/
+button
+  border: none
+
+@mixin colorWhite
+  a
+    color: white
+
+button.btn
+  padding: 0
+  border-radius: 2em
+  transition: .3s
+  a
+    @include fx
+    @include fx-c
+    width: auto
+    padding: .5em 1.5em
+    min-height: 44px
+    font-size: 1.6rem
+  &:hover
+    opacity: .85
+  &.success
+    background-color: teal
+    @include colorWhite
+  &.warning
+    background-color: orange
+    @include colorWhite
+  &.danger
+    background-color: tomato
+    @include colorWhite
+  &.min
+    min-width: auto
+  &.normal
+    min-width: 120px
+  &.middle
+    min-width: 320px
+  &.large
+    min-width: 480px
+  &.full
+    min-width: 100%

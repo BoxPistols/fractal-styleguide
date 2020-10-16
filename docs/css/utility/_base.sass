@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap')
 
-/** include **/
-@import "../components/color"
-@import "block"
 
 /** reset **/
 *, ::after, ::before
@@ -18,23 +15,48 @@ body
     font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
+    -ms-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%
+    text-justify: inter-ideograph
+    zoom: 1
 
 /** Link **/
 a
   text-decoration: none
   color: $black
 
+/** image **/
+img
+  width: 100%
+  // width: auto
 
-/** Global Wrap **/
-.wrap
+/** Global Wrapping Style  **/
+#previewArea
   min-height: 100vh
-  background-color: $white
   font-size: 1.6rem
-  &-def
+  color: $white
+  background-color: $black
+  // animation: fade-rev .2s
+  &.onColorLight
     background-color: $white
-  &-dark
+    color: $black
+    animation: fade .9s
+
+@keyframes fade
+  0%
     background-color: $black
-    color: $white
+  100%
+    background-color: $white
+
+// @keyframes fade-rev
+//   0%
+//     background-color: transparent
+//   100%
+//     background-color: $black
+
+.wrap
+  padding: 3.2rem 0 1.6rem
+  font-size: 1.6rem
 
 // section
 .section
