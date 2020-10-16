@@ -725,7 +725,9 @@ mark {
 
 .Tree-collectionLabel {
   font-family: "Nanum Gothic Coding", monospace;
-  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  font-size: 0.95rem;
   line-height: 1.2;
   display: block;
   position: relative;
@@ -784,6 +786,7 @@ mark {
 
 .Tree-entityLink {
   font-family: "Nanum Gothic Coding", monospace;
+  letter-spacing: 0.04rem;
   display: flex;
   align-items: center;
   padding-top: 0.275rem;
