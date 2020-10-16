@@ -24,6 +24,14 @@
       }
     },
     {
+      "name": "ghost",
+      "context": {
+        "className": "ghost",
+        "sassName": "$ghost",
+        "color": "ghostwhite"
+      }
+    },
+    {
       "name": "gray",
       "context": {
         "className": "gray",
@@ -45,6 +53,22 @@
         "className": "grayLight",
         "sassName": "$grayLight",
         "color": "#c6cbce"
+      }
+    },
+    {
+      "name": "black",
+      "context": {
+        "className": "black",
+        "sassName": "$black",
+        "color": "#25303b"
+      }
+    },
+    {
+      "name": "bgDark",
+      "context": {
+        "className": "bgDark",
+        "sassName": "$bgDark",
+        "color": "#1e2325"
       }
     }
   ]
