@@ -32,7 +32,7 @@
 |-- fractal.config.js // fractal設定
 |-- package.json // yarn, package等
 |-- src
-|   -- components // frractal自体のデザインシステム表示
+|   -- components // fractal自体のデザインシステム表示
 |       |-- Atomic // 構造別のフォルダ分け、サイドナビのメインタイトルとして表示される
 |       |   |-- 01-typography　// ftractal サイドナビのタイトル表示（頭の数字は表示順設定用で表示はされない）
 |       |   |   |-- README.md // Tab のNotes表示
@@ -56,4 +56,3 @@
 |       -- _preview.hbs
 --
 ```
-
