@@ -5,7 +5,7 @@ description: overview
 
 # 01-index
 
-![](/docs/img/favicon.png)
+![](/img/favicon.png)
 
 - [Fractal Official Document](https://fractal.build/)
   - [guide](https://fractal.build/guide/)

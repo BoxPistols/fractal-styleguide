@@ -20,7 +20,7 @@ fractal.web.set('server.syncOptions', { open: true })
 fractal.web.set('static.path', __dirname + '/assets')
 
 /* 静的ファイルの書き出し場所 */
-fractal.web.set('builder.dest', __dirname + '/public')
+fractal.web.set('builder.dest', __dirname + '/docs')
 
 // Staus
 fractal.components.set('default.status', 'wip'); // default is 'ready'
