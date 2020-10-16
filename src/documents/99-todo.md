@@ -8,3 +8,6 @@
   * [ ] Info
   * [ ] Notes
 
+* [ ] コーディングルール
+  * [ ] CSS Class設計 命名
+  * [ ] Atomic構造

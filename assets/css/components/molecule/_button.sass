@@ -20,8 +20,14 @@ button.btn
     padding: .5em 1.5em
     min-height: 44px
     font-size: 1.6rem
+    &.size-sm
+      min-height: 32px
+      padding: .5em 1.2em
+      font-size: 1.2rem
+
   &:hover
     opacity: .85
+  /** Colors **/
   &.success
     background-color: teal
     @include colorWhite
@@ -31,6 +37,7 @@ button.btn
   &.danger
     background-color: tomato
     @include colorWhite
+  /** Sizes **/
   &.min
     min-width: auto
   &.normal
