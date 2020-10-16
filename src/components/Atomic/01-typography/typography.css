@@ -1,0 +1,20 @@
+.head {
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+.head_1 {
+  font-size: 3.2rem;
+}
+.head_2 {
+  font-size: 2.8rem;
+}
+.head_3 {
+  font-size: 2.4rem;
+}
+.head_4 {
+  font-size: 2.2rem;
+}
+.head_5 {
+  font-size: 2rem;
+}
