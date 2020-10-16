@@ -5,23 +5,17 @@ description: overview
 
 # 01-index
 
-![](https://github.com/BoxPistols/fractal-styleguide/tree/abd69da5d6931553788415593d88ad4d1a125903/docs/img/favicon.png)
+![](/docs/img/favicon.png)
 
-Fractal Official Document
+- [Fractal Official Document](https://fractal.build/)
+  - [guide](https://fractal.build/guide/)
+  - [template](https://fractal.build/guide/core-concepts/view-templates.html)
+  - [components](https://fractal.build/guide/components/)
+  - [ordering-collections](https://fractal.build/guide/collections/#ordering-collections)
+  - [configuration](https://fractal.build/guide/web/#configuration)
+  - [running-commands](https://fractal.build/guide/cli/#running-commands)
 
-https://fractal.build/guide/
 
-https://fractal.build/
-
-https://fractal.build/guide/core-concepts/view-templates.html
-
-https://fractal.build/guide/components/
-
-https://fractal.build/guide/collections/#ordering-collections
-
-https://fractal.build/guide/web/#configuration
-
-https://fractal.build/guide/cli/#running-commands
 
 
 
