@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/monokai.min.css?cachebust=1.5.0" type="text/css">
 
 
-<title>Todo | SEKAI DESIGN-SYSTEM</title>
+<title>Components | SEKAI DESIGN-SYSTEM</title>
 
 </head>
 <body>
@@ -65,7 +65,7 @@
 
     <div class="Document-header">
         
-        <h1 class="Document-title">Todo</h1>
+        <h1 class="Document-title">Components</h1>
         
 
 
@@ -82,26 +82,13 @@
 
     
     
-    <h1 id="todo">TODO</h1>
-<ul>
-<li><input disabled="" type="checkbox"> <p>Tabの解説</p>
-<ul>
-<li><input disabled="" type="checkbox"> HTML</li>
-<li><input disabled="" type="checkbox"> View</li>
-<li><input disabled="" type="checkbox"> Context</li>
-<li><input disabled="" type="checkbox"> Assets(has sass/css/js)</li>
-<li><input disabled="" type="checkbox"> Info</li>
-<li><input disabled="" type="checkbox"> Notes</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"> <p>コーディングルール</p>
-<ul>
-<li><input disabled="" type="checkbox"> CSS Class設計 命名</li>
-<li><input disabled="" type="checkbox"> Atomic構造</li>
-</ul>
-</li>
-</ul>
-
+    <h2 id="コンポーネント階層の切り分け方">コンポーネント階層の切り分け方</h2>
+<pre><code class="hljs language-js">|-- components
+|   |-- template <span class="hljs-comment">//ある程度決まったデザインセクション</span>
+|       |-- layout <span class="hljs-comment">//organismsをカバーするデザイン要素</span>
+|           |-- organisms <span class="hljs-comment">//Moleculeの集合体 Card</span>
+|               |-- Molecule <span class="hljs-comment">//Atomの集合体 Button</span>
+|                       |-- Atomic <span class="hljs-comment">//最小単位</span></code></pre>
     
 
 
@@ -140,6 +127,16 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../index.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="folderstructure.html" data-pjax>
                 <span>Folderstructure</span>
                 
@@ -151,17 +148,7 @@
         
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a class="Tree-entityLink" href="" data-pjax>
-                <span>Todo</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../index.html" data-pjax>
-                <span>Overview</span>
+                <span>Components</span>
                 
             </a>
         </li>
@@ -414,6 +401,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/color--mix.html" data-pjax>
+                <span>Mix</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../components/detail/color--main.html" data-pjax>
                 <span>Main</span>
                 
@@ -486,6 +497,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/color--graylight.html" data-pjax>
+                <span>Graylight</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../components/detail/color--gray.html" data-pjax>
                 <span>Gray</span>
                 
@@ -512,30 +547,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../components/detail/color--graydark.html" data-pjax>
                 <span>Graydark</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/color--graylight.html" data-pjax>
-                <span>Graylight</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -918,6 +929,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/plate--h3.html" data-pjax>
+                <span>H 3</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../components/detail/plate--h4.html" data-pjax>
                 <span>H 4</span>
                 
@@ -1070,8 +1105,8 @@
         </div>
         <div class="Tree-aside">
             Built on:
-            <time datetime="2020-10-16T23:44:38.623Z">
-                2020-10-17
+            <time datetime="2020-10-17T18:35:09.969Z">
+                2020-10-18
             </time>
         </div>
     </div>

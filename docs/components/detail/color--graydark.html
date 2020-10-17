@@ -173,8 +173,9 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-16f4621f21f849ed983d6b3717d37e49-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'wrap wrap-dark'</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section'</span>&gt;</span>
+        <pre><span class="hljs-comment">&lt;!-- カタログ用スタイル：カラー --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'wrap'</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section'</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"display:"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'color__org'</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'color__mol'</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'color__atm grayDark'</span>&gt;</span>
@@ -186,6 +187,12 @@
                 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Color: #44484b<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- for Mixin --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section mixin'</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'color__org'</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -194,8 +201,9 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-16f4621f21f849ed983d6b3717d37e49-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'wrap wrap-dark'</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section'</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-comment">&lt;!-- カタログ用スタイル：カラー --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'wrap'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section'</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"display:</span></span></span><span class="hljs-template-variable">{{display}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'color__org'</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'color__mol'</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'color__atm </span></span></span><span class="hljs-template-variable">{{ className }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">'</span>&gt;</span>
@@ -207,6 +215,20 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Color: </span><span class="hljs-template-variable">{{ color }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- for Mixin --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section mixin'</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'color__org'</span>&gt;</span>
+      </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> colors}}</span><span class="xml">
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'color__mol'</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'color__atm </span></span></span><span class="hljs-template-variable">{{ class }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">'</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><span class="hljs-template-variable">{{ class }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><span class="hljs-template-variable">{{ c-name }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -219,7 +241,8 @@
             <pre>{
   <span class="hljs-attr">"className"</span>: <span class="hljs-string">"grayDark"</span>,
   <span class="hljs-attr">"sassName"</span>: <span class="hljs-string">"$grayDark"</span>,
-  <span class="hljs-attr">"color"</span>: <span class="hljs-string">"#44484b"</span>
+  <span class="hljs-attr">"color"</span>: <span class="hljs-string">"#44484b"</span>,
+  <span class="hljs-attr">"display"</span>: <span class="hljs-string">""</span>
 }</pre>
             
         
@@ -243,11 +266,15 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(9)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(10)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="color--default.html">
                     <span>Default</span>
+                </a>, 
+            
+                <a href="color--mix.html">
+                    <span>Mix</span>
                 </a>, 
             
                 <a href="color--main.html">
@@ -262,16 +289,16 @@
                     <span>Ghost</span>
                 </a>, 
             
+                <a href="color--graylight.html">
+                    <span>Graylight</span>
+                </a>, 
+            
                 <a href="color--gray.html">
                     <span>Gray</span>
                 </a>, 
             
                 <a href="">
                     <span>Graydark</span>
-                </a>, 
-            
-                <a href="color--graylight.html">
-                    <span>Graylight</span>
                 </a>, 
             
                 <a href="color--black.html">
@@ -358,6 +385,16 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../index.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../../docs/folderstructure.html" data-pjax>
                 <span>Folderstructure</span>
                 
@@ -368,18 +405,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/todo.html" data-pjax>
-                <span>Todo</span>
-                
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../index.html" data-pjax>
-                <span>Overview</span>
+            <a class="Tree-entityLink" href="../../docs/components.html" data-pjax>
+                <span>Components</span>
                 
             </a>
         </li>
@@ -632,6 +659,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="color--mix.html" data-pjax>
+                <span>Mix</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="color--main.html" data-pjax>
                 <span>Main</span>
                 
@@ -704,6 +755,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="color--graylight.html" data-pjax>
+                <span>Graylight</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="color--gray.html" data-pjax>
                 <span>Gray</span>
                 
@@ -730,30 +805,6 @@
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a class="Tree-entityLink" href="" data-pjax>
                 <span>Graydark</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="color--graylight.html" data-pjax>
-                <span>Graylight</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1136,6 +1187,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="plate--h3.html" data-pjax>
+                <span>H 3</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="plate--h4.html" data-pjax>
                 <span>H 4</span>
                 
@@ -1288,8 +1363,8 @@
         </div>
         <div class="Tree-aside">
             Built on:
-            <time datetime="2020-10-16T23:44:38.623Z">
-                2020-10-17
+            <time datetime="2020-10-17T18:35:09.969Z">
+                2020-10-18
             </time>
         </div>
     </div>
