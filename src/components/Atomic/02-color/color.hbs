@@ -1,5 +1,6 @@
-<div class='wrap wrap-dark'>
-  <section class='section'>
+<!-- カタログ用スタイル：カラー -->
+<div class='wrap'>
+  <section class='section' style="display:{{display}}">
     <div class='color__org'>
       <div class='color__mol'>
         <div class='color__atm {{ className }}'>
@@ -11,4 +12,18 @@
         <p>Color: {{ color }}</p>
       </div>
   </section>
+
+  <!-- for Mixin -->
+  <section class='section mixin'>
+    <div class='color__org'>
+      {{#each colors}}
+        <div class='color__mol'>
+          <div class='color__atm {{ class }}'>
+            <p>{{ class }}</p>
+            <p>{{ c-name }}</p>
+          </div>
+        </div>
+      {{/each}}
+  </section>
+
 </div>

@@ -24,6 +24,12 @@
       }
     },
     {
+      "name": "h3",
+      "context": {
+        "head": "3"
+      }
+    },
+    {
       "name": "h4",
       "context": {
         "head": "4"
