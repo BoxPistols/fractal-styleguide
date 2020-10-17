@@ -184,15 +184,25 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"plate_lay"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"plate_org "</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"plate_mol titleArea"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"plate_title"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"plate_title "</span>&gt;</span>
                         春風や惟然いねんが耳に馬の鈴
                     <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"plate_mol textArea"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"plate_text"</span>&gt;</span>
                         ゴーシュは町の活動写真館でセロを弾く係りでした。けれどもあんまり上手でないという評判でした。上手でないどころではなく実は仲間の楽手のなかではいちばん下手でしたから、いつでも楽長にいじめられるのでした。
                     <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"plate_mol buttonArea d-none mt-8"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'btn success normal'</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'btnSize-sm'</span>&gt;</span>
+                            送信する
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -208,16 +218,29 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section'</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{class}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">_lay"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{class}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">_org </span></span></span><span class="hljs-template-variable">{{ variation }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+        </span><span class="hljs-comment">{{!-- Title --}}</span><span class="xml">
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{class}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">_mol titleArea"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">h</span></span></span><span class="hljs-template-variable">{{ head }}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">class</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{class}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">_title"</span>&gt;</span>
-            </span><span class="hljs-template-variable">{{dummyTitle}}</span><span class="xml">
+          <span class="hljs-tag">&lt;<span class="hljs-name">h</span></span></span><span class="hljs-template-variable">{{ head }}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">class</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{class}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">_title </span></span></span><span class="hljs-template-variable">{{ heading }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+            </span><span class="hljs-template-variable">{{ _config.dummy.title }}</span><span class="xml">
           <span class="hljs-tag">&lt;/<span class="hljs-name">h</span></span></span><span class="hljs-template-variable">{{ head }}</span><span class="xml"><span class="hljs-tag">&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        </span><span class="hljs-comment">{{!-- Text --}}</span><span class="xml">
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{class}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">_mol textArea"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{class}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">_text"</span>&gt;</span>
-            </span><span class="hljs-template-variable">{{dummyText}}</span><span class="xml">
+            </span><span class="hljs-template-variable">{{ _config.dummy.text }}</span><span class="xml">
           <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        </span><span class="hljs-comment">{{!-- BUtton --}}</span><span class="xml">
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{class}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">_mol buttonArea </span></span></span><span class="hljs-template-variable">{{ display }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> mt-8"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'btn success normal'</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'btnSize-sm'</span>&gt;</span>
+              </span><span class="hljs-template-variable">{{button}}</span><span class="xml">
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -234,8 +257,7 @@
   <span class="hljs-attr">"class"</span>: <span class="hljs-string">"plate"</span>,
   <span class="hljs-attr">"variation"</span>: <span class="hljs-string">""</span>,
   <span class="hljs-attr">"head"</span>: <span class="hljs-string">"3"</span>,
-  <span class="hljs-attr">"dummyTitle"</span>: <span class="hljs-string">"春風や惟然いねんが耳に馬の鈴"</span>,
-  <span class="hljs-attr">"dummyText"</span>: <span class="hljs-string">"ゴーシュは町の活動写真館でセロを弾く係りでした。けれどもあんまり上手でないという評判でした。上手でないどころではなく実は仲間の楽手のなかではいちばん下手でしたから、いつでも楽長にいじめられるのでした。"</span>,
+  <span class="hljs-attr">"display"</span>: <span class="hljs-string">"d-none"</span>,
   <span class="hljs-attr">"button"</span>: <span class="hljs-string">"送信する"</span>
 }</pre>
             
@@ -254,15 +276,15 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-26131d4579808f4482800d22420d760d">plate.css</option>
+                <option value="file-fc6eb49ae3dbf25c3858ac38857a13b0">plate.css</option>
                 
-                <option value="file-bcee9469cced0c7b2a4955c8b6bb7dcb">plate.sass</option>
+                <option value="file-c252a1eda30d4cb034c33c3b1c406681">plate.sass</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-26131d4579808f4482800d22420d760d" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-fc6eb49ae3dbf25c3858ac38857a13b0" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -298,7 +320,7 @@
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-bcee9469cced0c7b2a4955c8b6bb7dcb" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-c252a1eda30d4cb034c33c3b1c406681" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -345,7 +367,7 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(6)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(7)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="">
@@ -368,8 +390,12 @@
                     <span>H 4</span>
                 </a>, 
             
-                <a href="plate--button.html">
-                    <span>Button</span>
+                <a href="plate--has-button.html">
+                    <span>Has Button</span>
+                </a>, 
+            
+                <a href="plate--has-button-right.html">
+                    <span>Has Button Right</span>
                 </a>
             
             </span>
@@ -1298,8 +1324,32 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="plate--button.html" data-pjax>
-                <span>Button</span>
+            <a class="Tree-entityLink" href="plate--has-button.html" data-pjax>
+                <span>Has Button</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="plate--has-button-right.html" data-pjax>
+                <span>Has Button Right</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1426,7 +1476,7 @@
         </div>
         <div class="Tree-aside">
             Built on:
-            <time datetime="2020-10-17T18:35:09.969Z">
+            <time datetime="2020-10-17T20:35:59.282Z">
                 2020-10-18
             </time>
         </div>
