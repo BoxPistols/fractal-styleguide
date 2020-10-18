@@ -1,8 +1,10 @@
 {
   "title": "typography",
   "context": {
-    "text": "春風や惟然いねんが耳に馬の鈴",
-    "dummyText": "ゴーシュは町の活動写真館でセロを弾く係りでした。けれどもあんまり上手でないという評判でした。上手でないどころではなく実は仲間の楽手のなかではいちばん下手でしたから、いつでも楽長にいじめられるのでした。"
+    "_previewHeader": "block",
+    "_previewFontSize": "none",
+    "_previewRwFontSize": "none",
+    "font": ""
   },
   "variants":
   [
@@ -35,6 +37,50 @@
       "context": {
         "className": "5"
       }
+    },
+    {
+      "name": "Rwd 12-14",
+      "context": {
+        "display": "d-none",
+        "font": "tex-ss"
+      }
+    },
+    {
+      "name": "Font-Size-mix",
+      "context": {
+          "_previewHeader": "none",
+          "_previewFontSize": "block",
+          "_previewRwFontSize": "none",
+          "sizes": [
+            { "class": "fz12"},
+            { "class": "fz16"},
+            { "class": "fz20"},
+            { "class": "fz24"},
+            { "class": "fz28"},
+            { "class": "fz32"},
+            { "class": "fz36"},
+            { "class": "fz40"}
+          ]
+      }
+    },
+    {
+      "name": "Rwd-Tex-mix",
+      "context": {
+          "_previewHeader": "none",
+          "_previewFontSize": "none",
+          "_previewRwFontSize": "block",
+          "sizes": [
+            { "class": "tx-s", "to": 12, "end": 14 },
+            { "class": "tx-sm", "to": 14, "end": 16 },
+            { "class": "tx-m", "to": 14, "end": 18 },
+            { "class": "tx-lm", "to": 16, "end": 20 },
+            { "class": "tx-sl", "to": 18, "end": 22 },
+            { "class": "tx-ml", "to": 20, "end": 24 },
+            { "class": "tx-l", "to": 24, "end": 28 },
+            { "class": "tx-x", "to": 28, "end": 32 }
+        ]
+      }
     }
+
   ]
 }

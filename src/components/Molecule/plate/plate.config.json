@@ -47,6 +47,13 @@
         "head": "3",
         "display": "fx fx-jc-e"
       }
+    },
+    {
+      "name": "has-border",
+      "context": {
+        "head": "3",
+        "variation": "border p-12"
+      }
     }
   ]
 }
