@@ -17,7 +17,7 @@ $ yarn run dev
 $ yarn run css
 ```
 
-## Production
+## Production 本番書きだし
 
 ### 軽量化の必要応じて、CSS を圧縮 css minify
 
@@ -37,9 +37,13 @@ $ yarn run build
 
 ### JSX/React コンパイル書きだし
 
+* react/階下のsassファイルのimport元注意
+
 ```
 $ yarn run react-build
 ```
+
+- jsx/ compile to react/
 
 ---
 
@@ -53,16 +57,6 @@ $ yarn run react-build
   - src
     - UI components 確認用
 
-## build
-
-`$ chmod 755 doc`
-
-```
-$ yarn run build
-```
-
-- compile to docs
-- static files
 
 ## Tree
 

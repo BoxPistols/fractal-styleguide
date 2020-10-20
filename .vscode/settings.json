@@ -6,11 +6,12 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "docs": false,
+    "docs": true,
     "node_modules": true,
     ".vscode": true,
     "*.lock": true,
-    "**/.cache": true
+    "**/.cache": true,
+    "react": true
   },
   "explorerExclude.backup": null,
   "vue3snippets.enable-compile-vue-file-on-did-save-code": false
