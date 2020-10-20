@@ -76,4 +76,4 @@ yarn-debug.log*
 
 # Deploy
 docs/
-# react/
+react/
