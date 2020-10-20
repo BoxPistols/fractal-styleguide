@@ -12,3 +12,74 @@
     font-size: 2.2rem
   &_5
     font-size: 2.0rem
+
+/** Font-Sizes **/
+// Start 8px End 48px Multiple 4px
+$startPx: 8
+$endPx: 48
+$multiplePx: 4
+@for $i from 0 through (($endPx - $startPx) / $multiplePx)
+  .fz#{$startPx + $i * $multiplePx}
+    font-size: #{($startPx + $i * $multiplePx) / 10}rem
+
+/** Responsive font Size **/
+// TODO: クラス名の決定、メインのフォントサイズ運用により決定させる
+// TODO : 抽象化レスポンシブフォントサイズ
+// TODO : px or rem 設計の選択
+/*
+ *  s: 12-14
+ * sm: 14-16
+ *  m: 14-18
+ * lm: 16-20
+ * sl: 18-22
+ * ml: 20-24
+ *    l: 22-26
+ * l: 24-28
+ *    xl: 26-30
+ *    sx: 28-32
+ *  x: 28-32
+ */
+
+/** IE対応： フォールバックの設置 = 中間サイズ or 最小サイズ **/
+// font-size: 1.4rem // -- fallback for IE 中間値 or 最小値 --
+
+/* 12px @ 400px increasing to 14px @ 1440px */
+.tx-s // 12-14
+  font-size: min(max(1.2rem, calc(1.2rem + ((1vw - 0.4rem) * 0.1923))), 1.4rem)
+  @include mqMin(xl)
+    font-size: 14px
+
+.tx-sm // 14-16
+  font-size: min(max(1.4rem, calc(1.4rem + ((1vw - 0.4rem) * 0.1923))), 1.6rem)
+  @include mqMin(xl)
+    font-size: 16px
+
+.tx-m // 14-18
+  font-size: min(max(1.4rem, calc(1.4rem + ((1vw - 0.4rem) * 0.3846))), 1.8rem)
+  @include mqMin(xl)
+    font-size: 18px
+
+.tx-lm // 16-20
+  font-size: min(max(1.6rem, calc(1.6rem + ((1vw - 0.4rem) * 0.3846))), 2rem)
+  @include mqMin(xl)
+    font-size: 2rem
+
+.tx-sl // 18-22
+  font-size: min(max(1.8rem, calc(1.8rem + ((1vw - 0.4rem) * 0.3846))), 2.2rem)
+  @include mqMin(xl)
+    font-size: 2.2rem
+
+.tx-ml // 20-24
+  font-size: min(max(2rem, calc(2rem + ((1vw - 0.4rem) * 0.3846))), 2.4rem)
+  @include mqMin(xl)
+    font-size: 2.4rem
+
+.tx-l // 24-28
+  font-size: min(max(2.4rem, calc(2.4rem + ((1vw - 0.4rem) * 0.3846))), 2.8rem)
+  @include mqMin(xl)
+    font-size: 2.8rem
+
+.tx-x // 28-32
+  font-size: min(max(2.8rem, calc(2.8rem + ((1vw - 0.4rem) * 0.3846))), 3.2rem)
+  @include mqMin(xl)
+    font-size: 3.2rem
