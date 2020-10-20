@@ -180,14 +180,23 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'wrap'</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section'</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section'</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"display:block"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"head head_2"</span>&gt;</span>
             春風や惟然いねんが耳に馬の鈴
         <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=&gt;</span>
             ゴーシュは町の活動写真館でセロを弾く係りでした。けれどもあんまり上手でないという評判でした。上手でないどころではなく実は仲間の楽手のなかではいちばん下手でしたから、いつでも楽長にいじめられるのでした。
         <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section'</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"display:none"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"head_1 mb-16"</span>&gt;</span>固定サイズ<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section'</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"display:none"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"head_1 mb-16"</span>&gt;</span>可変サイズ<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -197,14 +206,40 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-9b1b11a6918e5c90605fbf5db7118d36-panel-view">
     <code class="Code Code--lang-handlebars hljs">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'wrap'</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section'</span>&gt;</span>
+  </span><span class="hljs-comment">{{!-- header --}}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section'</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"display:</span></span></span><span class="hljs-template-variable">{{_previewHeader}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h</span></span></span><span class="hljs-template-variable">{{className}}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">class</span>=<span class="hljs-string">"head head_</span></span></span><span class="hljs-template-variable">{{className}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
-      </span><span class="hljs-template-variable">{{text}}</span><span class="xml">
+      </span><span class="hljs-template-variable">{{ _config.dummy.title }}</span><span class="xml">
     <span class="hljs-tag">&lt;/<span class="hljs-name">h</span></span></span><span class="hljs-template-variable">{{className}}</span><span class="xml"><span class="hljs-tag">&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-      </span><span class="hljs-template-variable">{{ dummyText }}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=</span></span><span class="hljs-template-variable">{{ font }}</span><span class="xml"><span class="hljs-tag">&gt;</span>
+      </span><span class="hljs-template-variable">{{ _config.dummy.text }}</span><span class="xml">
     <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  </span><span class="hljs-comment">{{!-- フォント サイズ--}}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section'</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"display:</span></span></span><span class="hljs-template-variable">{{_previewFontSize}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"head_1 mb-16"</span>&gt;</span>固定サイズ<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> sizes}}</span><span class="xml">
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-8"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=</span></span><span class="hljs-template-variable">{{ class }}</span><span class="xml"><span class="hljs-tag">&gt;</span>
+          文字サイズ： </span><span class="hljs-template-variable">{{ class }}</span><span class="xml">
+        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  </span><span class="hljs-comment">{{!-- レスポンシブフォント --}}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section'</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"display:</span></span></span><span class="hljs-template-variable">{{_previewRwFontSize}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"head_1 mb-16"</span>&gt;</span>可変サイズ<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> sizes}}</span><span class="xml">
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-8"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=</span></span><span class="hljs-template-variable">{{ class }}</span><span class="xml"><span class="hljs-tag">&gt;</span>
+          </span><span class="hljs-template-variable">{{ to }}</span><span class="xml">pxから</span><span class="hljs-template-variable">{{ end }}</span><span class="xml">pxまでvwごとに無段階レスポンシブフォントサイズ
+        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -215,8 +250,10 @@
         
             
             <pre>{
-  <span class="hljs-attr">"text"</span>: <span class="hljs-string">"春風や惟然いねんが耳に馬の鈴"</span>,
-  <span class="hljs-attr">"dummyText"</span>: <span class="hljs-string">"ゴーシュは町の活動写真館でセロを弾く係りでした。けれどもあんまり上手でないという評判でした。上手でないどころではなく実は仲間の楽手のなかではいちばん下手でしたから、いつでも楽長にいじめられるのでした。"</span>,
+  <span class="hljs-attr">"_previewHeader"</span>: <span class="hljs-string">"block"</span>,
+  <span class="hljs-attr">"_previewFontSize"</span>: <span class="hljs-string">"none"</span>,
+  <span class="hljs-attr">"_previewRwFontSize"</span>: <span class="hljs-string">"none"</span>,
+  <span class="hljs-attr">"font"</span>: <span class="hljs-string">""</span>,
   <span class="hljs-attr">"className"</span>: <span class="hljs-string">"2"</span>
 }</pre>
             
@@ -235,15 +272,15 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-b2982f18197d24e4d6fcd470e7fd038c">typography.css</option>
+                <option value="file-d265406f32b6c95d4abaa557b258683c">typography.css</option>
                 
-                <option value="file-8882f096f1a01b943ba22c10650bd5d0">typography.sass</option>
+                <option value="file-fa49588e70fc9dba6e2a8657870994ee">typography.sass</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-b2982f18197d24e4d6fcd470e7fd038c" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-d265406f32b6c95d4abaa557b258683c" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -251,25 +288,23 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-CSS FileBrowser-code hljs">
-                                <pre><span class="hljs-selector-class">.head</span> {
-  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
-  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">500</span>;
-  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0.5em</span>;
-}
-<span class="hljs-selector-class">.head_1</span> {
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">3.2rem</span>;
-}
-<span class="hljs-selector-class">.head_2</span> {
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2.8rem</span>;
-}
-<span class="hljs-selector-class">.head_3</span> {
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2.4rem</span>;
-}
-<span class="hljs-selector-class">.head_4</span> {
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2.2rem</span>;
-}
-<span class="hljs-selector-class">.head_5</span> {
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2rem</span>;
+                                <pre><span class="hljs-comment">/* Error: Undefined mixin.
+ *    ,
+ * 49 | /   @include mqMin(xl)
+ * 50 | \     font-size: 14px
+ *    '
+ *   assets\css\components\atom\_typography.sass 49:3         @import
+ *   src\components\atomic\01-typography\typography.sass 1:9  root stylesheet */</span>
+
+<span class="hljs-selector-tag">body</span><span class="hljs-selector-pseudo">::before</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Source Code Pro"</span>, <span class="hljs-string">"SF Mono"</span>, Monaco, Inconsolata, <span class="hljs-string">"Fira Mono"</span>,
+      <span class="hljs-string">"Droid Sans Mono"</span>, monospace, monospace;
+  <span class="hljs-attribute">white-space</span>: pre;
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">1em</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">1em</span>;
+  <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">2px</span> solid black;
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">"Error: Undefined mixin.\a    \2577 \a 49 \2502  \250c    @include mqMin(xl)\a 50 \2502  \2514      font-size: 14px\a    \2575 \a   assets\\css\\components\\atom\\_typography.sass 49:3         @import\a   src\\components\\atomic\\01-typography\\typography.sass 1:9  root stylesheet"</span>;
 }
 </pre>
                             </code>
@@ -287,12 +322,12 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">237 Bytes</span>
+                    <span class="Meta-value">804 Bytes</span>
                 </li>
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-8882f096f1a01b943ba22c10650bd5d0" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-fa49588e70fc9dba6e2a8657870994ee" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -339,7 +374,7 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(6)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(9)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="typography--default.html">
@@ -364,6 +399,18 @@
             
                 <a href="typography--head_5.html">
                     <span>Head 5</span>
+                </a>, 
+            
+                <a href="typography--rwd-12-14.html">
+                    <span>Rwd 12 14</span>
+                </a>, 
+            
+                <a href="typography--font-size-mix.html">
+                    <span>Font Size Mix</span>
+                </a>, 
+            
+                <a href="typography--rwd-tex-mix.html">
+                    <span>Rwd Tex Mix</span>
                 </a>
             
             </span>
@@ -684,6 +731,78 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="typography--head_5.html" data-pjax>
                 <span>Head 5</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="typography--rwd-12-14.html" data-pjax>
+                <span>Rwd 12 14</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="typography--font-size-mix.html" data-pjax>
+                <span>Font Size Mix</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="typography--rwd-tex-mix.html" data-pjax>
+                <span>Rwd Tex Mix</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1367,6 +1486,30 @@
         </li>
         
     
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="plate--has-border.html" data-pjax>
+                <span>Has Border</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
             </ul>
         </li>
@@ -1474,8 +1617,8 @@
         </div>
         <div class="Tree-aside">
             Built on:
-            <time datetime="2020-10-17T20:45:00.205Z">
-                2020-10-18
+            <time datetime="2020-10-20T18:36:21.371Z">
+                2020-10-21
             </time>
         </div>
     </div>

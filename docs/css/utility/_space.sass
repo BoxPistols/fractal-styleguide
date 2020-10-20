@@ -34,28 +34,18 @@ $multiplePx: 4
     padding-bottom: #{$startPx + $i * $multiplePx}px
 
 // 　horizontal / vertical
-@for $i from $startPx through (($endPx - $startPx - 4) / $multiplePx)
-  .mx-#{$startPx + $i * $multiplePx + 4}
-    margin: 0 #{$startPx + $i * $multiplePx + 4}px
-  .my-#{$startPx + $i * $multiplePx + 4}
-    margin: #{$startPx + $i * $multiplePx + 4}px 0
-
-  .px-#{$startPx + $i * $multiplePx + 4}
-    padding: 0 #{$startPx + $i * $multiplePx + 4}px
-  .py-#{$startPx + $i * $multiplePx + 4}
-    padding: #{$startPx + $i * $multiplePx + 4}px 0
-// Start 24px End 48px Multiple 4px
-// $startPx: 24;
-// $endPx: 48;
-// $multiplePx: 4;
-// @for $i from 0 through (($endPx - $startPx) / $multiplePx) {
-  // .fz#{$startPx + $i * $multiplePx} {
-    // font-size: size($startPx + $i * $multiplePx);
-  // }
-// }
-
-// vw font-size sample
-// .vw_normal
-  // font-size: calc(12px + 2vw)
-  // @media only screen and (min-width: 960px)
-    // font-size: size(24)
+@for $i from $startPx through (($endPx - $startPx) / $multiplePx)
+  // margin
+  .mx-#{$startPx + $i * $multiplePx}
+    margin-left: #{$startPx + $i * $multiplePx}px
+    margin-right: #{$startPx + $i * $multiplePx}px
+  .my-#{$startPx + $i * $multiplePx}
+    margin-top: #{$startPx + $i * $multiplePx}px
+    margin-bottom: #{$startPx + $i * $multiplePx}px
+  // pading
+  .px-#{$startPx + $i * $multiplePx}
+    padding-left: #{$startPx + $i * $multiplePx}px
+    padding-right: #{$startPx + $i * $multiplePx}px
+  .py-#{$startPx + $i * $multiplePx}
+    padding-top: #{$startPx + $i * $multiplePx}px
+    padding-bottom: #{$startPx + $i * $multiplePx}px

@@ -6,31 +6,52 @@ This is Design System
 
 ## first setting \(once\)
 
-```text
-yarn run install
+```
+＄ yarn run install
 ```
 
-## start move
+## Development
 
-```text
-yarn run start
+```
+$ yarn run dev
+$ yarn run css
 ```
 
-## sass compile
+## Production
 
-```text
-yarn run sass
+### 軽量化の必要応じて、CSSを圧縮css minify
+- `yarn run css-build`
+- sass のどこかを一度コンパイルさせる
+
+### Fractal静的書き出し
+docs/ (fractal全体、静的書きだし)
+- `docs`フォルダが無ければ作成
+- 権限エラーが出れば`$ chmod 777 docs`
+
+```
+$ yarn run build
 ```
 
+### JSX/Reactコンパイル書きだし
+
+```
+$ yarn run react-build
+```
+
+---
+
+### CSS群の場所と用途
 * sass to css
   * assets css
     * Main UI Modules
   * assets theme
     * fractal preview design
   * src
-    * UI components create
+    * UI components 確認用
 
 ## build
+
+$ chmod 755 doc
 
 ```text
 yarn run build

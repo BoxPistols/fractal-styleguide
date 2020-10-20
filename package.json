@@ -5,18 +5,26 @@
   "author": "asagiri design",
   "license": "ISC",
   "main": "index.js",
+
   "scripts": {
-    "start": "fractal start --sync",
-    "dev": "npm-run-all -p css:*",
-    "dev:assets": "sass --watch assets/css/. assets/theme/.",
-    "dev:components": "sass --watch src/components/",
-    "ps": "parcel ./react/index.html -p 4649 --open",
-    "pb": "parcel build ./react/index.html",
+    "dev": "npm-run-all -p start:*",
+    "start:fractal": "fractal start --sync",
+    "start:parcel": "parcel ./react/index.html -p 4649 --open -d jsx",
+
     "css": "npm-run-all -p css:*",
-    "css:assets": "sass --watch --no-source-map --style compressed assets/css/. assets/theme/.",
+    "css:assets": "sass --watch assets/css/. assets/theme/.",
     "css:components": "sass --watch --no-source-map src/components/",
-    "build": "fractal build"
+
+    "css-build": "npm-run-all -p css-build:*",
+    "css-build:css-minify": "sass --watch --no-source-map --stylen compressed assets/css/. assets/theme/.",
+
+    "build": "fractal build",
+
+    "react-build": "npm-run-all -p build:*",
+    "build:jsx-clean": "rm -rf jsx/*",
+    "build:react-build": "parcel build ./react/index.html -d jsx"
   },
+
   "dependencies": {
     "@frctl/fractal": "^1.4.0",
     "faker": "^5.1.0",

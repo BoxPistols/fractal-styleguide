@@ -21,7 +21,7 @@ class Button extends React.Component {
               this.setState({ isMorning: !this.state.isMorning })
             }}
           >
-            Click
+            Click!
           </a>
         </button>
         <h1>{this.state.isMorning ? 'Good Morning' : 'Hello'} React!</h1>

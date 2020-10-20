@@ -1,20 +1,18 @@
-.head {
-  line-height: 1.5;
-  font-weight: 500;
-  margin-bottom: 0.5em;
-}
-.head_1 {
-  font-size: 3.2rem;
-}
-.head_2 {
-  font-size: 2.8rem;
-}
-.head_3 {
-  font-size: 2.4rem;
-}
-.head_4 {
-  font-size: 2.2rem;
-}
-.head_5 {
-  font-size: 2rem;
+/* Error: Undefined mixin.
+ *    ,
+ * 49 | /   @include mqMin(xl)
+ * 50 | \     font-size: 14px
+ *    '
+ *   assets\css\components\atom\_typography.sass 49:3         @import
+ *   src\components\atomic\01-typography\typography.sass 1:9  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 49 \2502  \250c    @include mqMin(xl)\a 50 \2502  \2514      font-size: 14px\a    \2575 \a   assets\\css\\components\\atom\\_typography.sass 49:3         @import\a   src\\components\\atomic\\01-typography\\typography.sass 1:9  root stylesheet";
 }

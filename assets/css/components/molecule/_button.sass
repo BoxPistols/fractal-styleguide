@@ -5,40 +5,59 @@
 button
   border: none
 
-@mixin colorWhite
-  a
-    color: white
-
 button.btn
   padding: 0
-  border-radius: 2em
+  border-radius: calc(40px / 2)
+  color: $black
+  background-color: $grayLight
   transition: .3s
+  outline: none
   // TODO: アンカーじゃないパターンも作成
+  &:hover
+    opacity: .85
+  &:focus, &:active
+    outline: none
+    background-color: skyblue
   a
     @include fx
     @include fx-c
     width: auto
-    padding: .5em 1.5em
-    min-height: 44px
+    padding: .25em 1.5em
+    min-height: 40px
     font-size: 1.6rem
-    /** BUtton Sizes **/
+    color: $black
+    background-color: $grayLight
+    border-radius: calc(40px / 2)
+    &:focus, &:active
+      outline: none
+      background-color: skyblue
+    /** Button Sizes **/
     &.btnSize-sm
       min-height: 32px
       padding: .5em 1.2em
       font-size: 1.2rem
+    /** Width Sizes **/
+    &.min
+      min-width: auto
+    &.normal
+      min-width: 120px
+    &.middle
+      min-width: 320px
+    &.large
+      min-width: 480px
+    &.full
+      min-width: 100%
+    /** Colors **/
+    &.success
+      background-color: teal
+      color: $white
+    &.warning
+      background-color: orange
+      color: $white
+    &.danger
+      background-color: tomato
+      color: $white
 
-  &:hover
-    opacity: .85
-  /** Colors **/
-  &.success
-    background-color: teal
-    @include colorWhite
-  &.warning
-    background-color: orange
-    @include colorWhite
-  &.danger
-    background-color: tomato
-    @include colorWhite
   /** Width Sizes **/
   &.min
     min-width: auto
@@ -50,3 +69,33 @@ button.btn
     min-width: 480px
   &.full
     min-width: 100%
+
+    /** Colors **/
+  &.success
+    a
+      background-color: teal
+      color: $white
+  &.warning
+    a
+      background-color: orange
+      color: $white
+  &.danger
+    a
+      background-color: tomato
+      color: $white
+  /** Width Sizes **/
+  &.min
+    a
+      min-width: auto
+  &.normal
+    a
+      min-width: 120px
+  &.middle
+    a
+      min-width: 320px
+  &.large
+    a
+      min-width: 480px
+  &.full
+    a
+      min-width: 100%
