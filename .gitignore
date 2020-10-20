@@ -75,5 +75,5 @@ yarn-debug.log*
 .cache/
 
 # Deploy
-
-# docs
+docs/
+react/
