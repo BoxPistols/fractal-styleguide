@@ -12,11 +12,11 @@ $break-max: ("sm": "screen and (max-width: 480px)", "md": "screen and (max-width
 
 $break-min: ("sm": "screen and (min-width: 481px)", "md": "screen and (min-width: 769px)", "lg": "screen and (min-width: 1025px)", "xl": "screen and (min-width: 1441px)") !default
 
-=mqMax($breakpoint: md)
+@mixin mqMax($breakpoint: md)
   @media #{map-get($break-max, $breakpoint)}
     @content
 
-=mqMin($breakpoint: md)
+@mixin mqMin($breakpoint: md)
   @media #{map-get($break-min, $breakpoint)}
     @content
 

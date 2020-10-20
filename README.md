@@ -39,13 +39,16 @@ yarn run build
 * compile to docs
 * static files
 
-## tree
+## Tree
 
-2020/10/12 17:01:19
+最終更新
+2020/10/20/21:12
 
 ```javascript
 .
 |-- README.md
+|-- reaft // react元フォルダ
+|-- dist // react書きだし先
 |-- assets // 汎用コンポーネント
 |   |-- css
 |   |   |-- components // Atomic等UIパーツ
