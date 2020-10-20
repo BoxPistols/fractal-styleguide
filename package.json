@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "npm-run-all -p start:*",
     "start:fractal": "fractal start --sync",
-    "start:parcel": "parcel ./react/index.html -p 4649 --open -d jsx",
+    "start:parcel": "parcel ./jsx/index.html -p 4649 --open -d react",
 
     "css": "npm-run-all -p css:*",
     "css:assets": "sass --watch assets/css/. assets/theme/.",
@@ -21,8 +21,8 @@
     "build": "fractal build",
 
     "react-build": "npm-run-all -p build:*",
-    "build:jsx-clean": "rm -rf jsx/*",
-    "build:react-build": "parcel build ./react/index.html -d jsx"
+    "build:jsx-clean": "rm -rf react/*",
+    "build:react-build": "parcel build ./jsx/index.html -d react"
   },
 
   "dependencies": {

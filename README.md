@@ -19,12 +19,15 @@ $ yarn run css
 
 ## Production
 
-### 軽量化の必要応じて、CSSを圧縮css minify
+### 軽量化の必要応じて、CSS を圧縮 css minify
+
 - `yarn run css-build`
 - sass のどこかを一度コンパイルさせる
 
-### Fractal静的書き出し
-docs/ (fractal全体、静的書きだし)
+### Fractal 静的書き出し
+
+docs/ (fractal 全体、静的書きだし)
+
 - `docs`フォルダが無ければ作成
 - 権限エラーが出れば`$ chmod 777 docs`
 
@@ -32,7 +35,7 @@ docs/ (fractal全体、静的書きだし)
 $ yarn run build
 ```
 
-### JSX/Reactコンパイル書きだし
+### JSX/React コンパイル書きだし
 
 ```
 $ yarn run react-build
@@ -40,25 +43,26 @@ $ yarn run react-build
 
 ---
 
-### CSS群の場所と用途
-* sass to css
-  * assets css
-    * Main UI Modules
-  * assets theme
-    * fractal preview design
-  * src
-    * UI components 確認用
+### CSS 群の場所と用途
+
+- sass to css
+  - assets css
+    - Main UI Modules
+  - assets theme
+    - fractal preview design
+  - src
+    - UI components 確認用
 
 ## build
 
-$ chmod 755 doc
+`$ chmod 755 doc`
 
-```text
-yarn run build
+```
+$ yarn run build
 ```
 
-* compile to docs
-* static files
+- compile to docs
+- static files
 
 ## Tree
 
