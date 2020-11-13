@@ -1270,78 +1270,39 @@ button.btn.full a {
  * *    sx: 28-32
  * *  x: 28-32
  * */
-/** IE対応： フォールバックの設置 = 中間サイズ or 最小サイズ **/
+/** px is IE対応： フォールバックの設置 = 中間サイズ **/
 /* 12px @ 400px increasing to 14px @ 1440px */
 .tx-s {
-  font-size: min(max(1.2rem, calc(1.2rem + ((1vw - 0.4rem) * 0.1923))), 1.4rem);
-}
-@media screen and (min-width: 1441px) {
-  .tx-s {
-    font-size: 14px;
-  }
+  font-size: 1.3rem;
+  font-size: clamp(1.2rem, 1.1429rem + 0.1786vw, 1.4rem);
 }
 
 .tx-sm {
-  font-size: min(max(1.4rem, calc(1.4rem + ((1vw - 0.4rem) * 0.1923))), 1.6rem);
-}
-@media screen and (min-width: 1441px) {
-  .tx-sm {
-    font-size: 16px;
-  }
+  font-size: clamp(1.4rem, 1.3429rem + 0.1786vw, 1.6rem);
 }
 
 .tx-m {
-  font-size: min(max(1.4rem, calc(1.4rem + ((1vw - 0.4rem) * 0.3846))), 1.8rem);
-}
-@media screen and (min-width: 1441px) {
-  .tx-m {
-    font-size: 18px;
-  }
+  font-size: clamp(1.4rem, 1.2857rem + 0.3571vw, 1.8rem);
 }
 
 .tx-lm {
-  font-size: min(max(1.6rem, calc(1.6rem + ((1vw - 0.4rem) * 0.3846))), 2rem);
-}
-@media screen and (min-width: 1441px) {
-  .tx-lm {
-    font-size: 2rem;
-  }
+  font-size: clamp(1.6rem, 1.4857rem + 0.3571vw, 2rem);
 }
 
 .tx-sl {
-  font-size: min(max(1.8rem, calc(1.8rem + ((1vw - 0.4rem) * 0.3846))), 2.2rem);
-}
-@media screen and (min-width: 1441px) {
-  .tx-sl {
-    font-size: 2.2rem;
-  }
+  font-size: clamp(1.8rem, 1.6857rem + 0.3571vw, 2.2rem);
 }
 
 .tx-ml {
-  font-size: min(max(2rem, calc(2rem + ((1vw - 0.4rem) * 0.3846))), 2.4rem);
-}
-@media screen and (min-width: 1441px) {
-  .tx-ml {
-    font-size: 2.4rem;
-  }
+  font-size: clamp(2rem, 1.8857rem + 0.3571vw, 2.4rem);
 }
 
 .tx-l {
-  font-size: min(max(2.4rem, calc(2.4rem + ((1vw - 0.4rem) * 0.3846))), 2.8rem);
-}
-@media screen and (min-width: 1441px) {
-  .tx-l {
-    font-size: 2.8rem;
-  }
+  font-size: clamp(2.4rem, 2.2857rem + 0.3571vw, 2.8rem);
 }
 
 .tx-x {
-  font-size: min(max(2.8rem, calc(2.8rem + ((1vw - 0.4rem) * 0.3846))), 3.2rem);
-}
-@media screen and (min-width: 1441px) {
-  .tx-x {
-    font-size: 3.2rem;
-  }
+  font-size: clamp(2.8rem, 2.6857rem + 0.3571vw, 3.2rem);
 }
 
 #toggleMode_area {

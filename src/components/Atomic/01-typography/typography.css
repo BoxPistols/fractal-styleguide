@@ -1,10 +1,10 @@
 /* Error: Undefined mixin.
  *    ,
- * 49 | /   @include mqMin(xl)
- * 50 | \     font-size: 14px
+ * 50 | /   @include mqMin(xl)
+ * 51 | \     font-size: 14px
  *    '
- *   assets\css\components\atom\_typography.sass 49:3         @import
- *   src\components\atomic\01-typography\typography.sass 1:9  root stylesheet */
+ *   assets/css/components/atom/_typography.sass 50:3         @import
+ *   src/components/Atomic/01-typography/typography.sass 1:9  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 49 \2502  \250c    @include mqMin(xl)\a 50 \2502  \2514      font-size: 14px\a    \2575 \a   assets\\css\\components\\atom\\_typography.sass 49:3         @import\a   src\\components\\atomic\\01-typography\\typography.sass 1:9  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 50 \2502  \250c    @include mqMin(xl)\a 51 \2502  \2514      font-size: 14px\a    \2575 \a   assets/css/components/atom/_typography.sass 50:3         @import\a   src/components/Atomic/01-typography/typography.sass 1:9  root stylesheet";
 }

@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "npm-run-all -p start:*",
     "start:fractal": "fractal start --sync",
-    "start:parcel": "parcel ./jsx/index.html -p 4649 --open -d react",
+    "start:parcel": "parcel ./jsx/index.html -p 8888 --open -d react",
 
     "css": "npm-run-all -p css:*",
     "css:assets": "sass --watch assets/css/. assets/theme/.",
