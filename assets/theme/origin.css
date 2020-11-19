@@ -811,7 +811,9 @@ mark {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: yellow;
+  color: greenyellow;
+  letter-spacing: 0.02em;
+  font-weight: 600;
 }
 
 [dir=ltr] .Tree-collectionLabel {
@@ -862,6 +864,8 @@ mark {
   padding-top: 0.275rem;
   padding-bottom: 0.275rem;
   text-decoration: none;
+  color: ghostwhite;
+  letter-spacing: 0.03em;
 }
 .Tree-entityLink:hover {
   background-color: rgba(83, 83, 99, 0.05);
