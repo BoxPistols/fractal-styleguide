@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "npm-run-all -p start:*",
     "start:fractal": "fractal start --sync",
-    "start:parcel": "parcel ./jsx/index.html -p 4649 --open -d react",
+    "start:parcel": "parcel ./jsx/index.html -p 4649 -d react",
     "css": "npm-run-all -p css:*",
     "css:assets": "sass --watch assets/css/. assets/theme/.",
     "css:components": "sass --watch --no-source-map src/components/",
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@frctl/fractal": "^1.5.2",
+    "@frctl/mandelbrot": "^1.7.0",
     "faker": "^5.2.0",
     "loadash": "^1.0.0",
     "node-sass": "^4.14.1",

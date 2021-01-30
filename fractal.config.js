@@ -22,7 +22,10 @@ fractal
   .set('server.sync', true)
 fractal
   .web
-  .set('server.syncOptions', {open: true})
+  .set('server.syncOptions', {open: false}) // Auto Open
+  // react open :
+  // "start:parcel": "parcel ./jsx/index.html -p 4649 --open -d react",
+  // http://localhost:4649/
 
 // 静的ファイル読み込み
 fractal
@@ -67,7 +70,7 @@ const myCustomisedTheme = mandelbrot({
 fractal
   .web
   .theme(myCustomisedTheme)
- 
+
 /* Global Dummy Texts */
 fractal.set('dummy.title', '春風や惟然いねんが耳に馬の鈴')
 fractal.set(
