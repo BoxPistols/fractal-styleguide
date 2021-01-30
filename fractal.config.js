@@ -67,7 +67,7 @@ const myCustomisedTheme = mandelbrot({
 fractal
   .web
   .theme(myCustomisedTheme)
-
+ 
 /* Global Dummy Texts */
 fractal.set('dummy.title', '春風や惟然いねんが耳に馬の鈴')
 fractal.set(
