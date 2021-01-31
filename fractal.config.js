@@ -31,7 +31,7 @@ fractal
 fractal
   .web
   .set('static.path', __dirname + '/assets')
-
+  
 /* 静的ファイルの書き出し場所 */
 fractal
   .web
