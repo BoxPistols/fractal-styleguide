@@ -1,17 +1,14 @@
 <!-- TODO: FIXME -->
-
 # TODO
 
--   [ ] Tabの解説
+* [ ] Tabの解説
+  * [ ] HTML
+  * [ ] View
+  * [ ] Context
+  * [ ] Assets\(has sass/css/js\)
+  * [ ] Info
+  * [ ] Notes
 
-    -   [ ] HTML
-    -   [ ] View
-    -   [ ] Context
-    -   [ ] Assets(has sass/css/js)
-    -   [ ] Info
-    -   [ ] Notes
-    
--   [ ] コーディングルール
-
-    -   [ ] CSS Class設計 命名
-    -   [ ] Atomic構造
+* [ ] コーディングルール
+  * [ ] CSS Class設計 命名
+  * [ ] Atomic構造
