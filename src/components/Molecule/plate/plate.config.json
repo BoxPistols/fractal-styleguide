@@ -7,13 +7,12 @@
     "display": "d-none",
     "button": "送信する"
   },
-  "variants":
-  [
+  "variants": [
     {
       "name": "plain",
       "context": {
         "variation": "plain",
-        "heading" : "d-none"
+        "heading": "d-none"
       }
     },
     {

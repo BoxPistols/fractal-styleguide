@@ -54,9 +54,9 @@
       const windowSizeView = document.getElementById('windowSizeView')
       // first view size
       const w = preview.clientWidth
-      if(w < 1){
-        windowSizeView.innerHTML = ('size...')
-      }else{
+      if (w < 1) {
+        windowSizeView.innerHTML = 'size...'
+      } else {
         windowSizeView.innerHTML = w + 'px'
       }
       // Size View UI on CSS
@@ -67,11 +67,11 @@
         /* for Resize, SetTimer for Performance  */
         let clientWidth = preview.clientWidth
         // view size-text
-        const value = (x) => {
+        const value = x => {
           return (windowSizeView.innerHTML = clientWidth + x)
         }
         // Change className
-        const sizeColor = (c) => {
+        const sizeColor = c => {
           return windowSizeView.classList.add(c)
         }
         // reset classList
@@ -105,7 +105,7 @@
         }, 800)
       })
       // リサイズ後の処理 = 0.8秒後にリサイズ処理のクリア
-      function onResize() {}
+      function onResize () {}
     }
     /* End Get Resize  */
   }

@@ -2,6 +2,5 @@
 
 ## Variation
 
-* Size
-* Color
-
+- Size
+- Color

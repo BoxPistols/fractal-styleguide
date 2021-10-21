@@ -1,11 +1,11 @@
 # files
 
-* assets/css, js
-  * Main UI Modules
-* assets/theme
-  * fractal preview design
-* src
-  * UI components create
+- assets/css, js
+  - Main UI Modules
+- assets/theme
+  - fractal preview design
+- src
+  - UI components create
 
 ```javascript
 .

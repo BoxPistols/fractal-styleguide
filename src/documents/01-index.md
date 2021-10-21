@@ -15,16 +15,15 @@ description: overview
   - [configuration](https://fractal.build/guide/web/#configuration)
   - [running-commands](https://fractal.build/guide/cli/#running-commands)
 
-
 ## About
 
 This is Design System
 
-* filse
-  * hbs\(html\)
-  * sass\(css\)
-  * JavaScript
-  * json\(for HTML component\)
+- filse
+  - hbs\(html\)
+  - sass\(css\)
+  - JavaScript
+  - json\(for HTML component\)
 
 ## Get Start
 
@@ -46,7 +45,7 @@ yarn run start
 
 ### sass compile
 
-* sass to css
+- sass to css
 
 ```
 yarn run css
@@ -54,8 +53,8 @@ yarn run css
 
 ### build
 
-* static files
-* compile to docs/
+- static files
+- compile to docs/
 
 ```
 yarn run build
