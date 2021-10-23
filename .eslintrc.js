@@ -1,5 +1,29 @@
 module.exports = {
-  rules: {
-    quotes: ['error', 'double'],
+  env: {
+    browser: true,
+    es2021: true,
   },
-}
+  extends: [
+    'eslint:recommended',
+    'plugin:node/recommended',
+  ],
+
+  parserOptions: {
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  rules: {
+    indent: [
+      'error',
+      2,
+    ],
+    'linebreak-style': [
+      'error',
+      'unix',
+    ],
+    quotes: [
+      'error',
+      'single',
+    ],
+  },
+};

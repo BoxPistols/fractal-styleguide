@@ -17,6 +17,5 @@
   "vue3snippets.enable-compile-vue-file-on-did-save-code": false,
   "javascript.format.enable": false,
   "editor.formatOnSave": true,
-  "files.autoSave": "afterDelay",
   "babel-compile-on-save.emitTSDeclarationMap": false
 }
