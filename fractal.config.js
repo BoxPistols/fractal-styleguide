@@ -33,7 +33,7 @@ const myCustomisedTheme = mandelbrot({
   nav: ['docs', 'search', 'components', 'information'],
   //skin: 'theme-name',
   styles: ['', '/theme/origin.css', ''],
-  highlightStyles: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/monokai.min.css',
+  highlightStyles: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/monokai.min.css',
   lang: 'ja',
   labels: {
     search: {
