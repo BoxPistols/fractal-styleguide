@@ -1192,10 +1192,11 @@ button.btn.full a {
 }
 
 .head {
-  line-height: 1.5;
   font-weight: 500;
+  line-height: 1.5;
   margin-bottom: 0.5em;
 }
+
 .head_1 {
   font-size: 3.2rem;
 }
@@ -1212,7 +1213,7 @@ button.btn.full a {
   font-size: 2rem;
 }
 
-/** Font-Sizes **/
+/*  Font-Sizes * */
 .fz8 {
   font-size: 0.8rem;
 }
@@ -1257,8 +1258,9 @@ button.btn.full a {
   font-size: 4.8rem;
 }
 
-/** Responsive font Size **/
-/* *  s: 12-14
+/*  Responsive font Size * */
+/*
+*  s: 12-14
  * * sm: 14-16
  * *  m: 14-18
  * * lm: 16-20
@@ -1269,40 +1271,41 @@ button.btn.full a {
  * *    xl: 26-30
  * *    sx: 28-32
  * *  x: 28-32
- * */
-/** px is IE対応： フォールバックの設置 = 中間サイズ **/
+ *
+*/
+/*  px is IE対応： フォールバックの設置 = 中間サイズ * */
 /* 12px @ 400px increasing to 14px @ 1440px */
 .tx-s {
   font-size: 1.3rem;
-  font-size: clamp(1.2rem, 1.1429rem + 0.1786vw, 1.4rem);
+  font-size: clamp(1.2rem, 1.1429rem 0.1786vw, 1.4rem);
 }
 
 .tx-sm {
-  font-size: clamp(1.4rem, 1.3429rem + 0.1786vw, 1.6rem);
+  font-size: clamp(1.4rem, 1.3429rem 0.1786vw, 1.6rem);
 }
 
 .tx-m {
-  font-size: clamp(1.4rem, 1.2857rem + 0.3571vw, 1.8rem);
+  font-size: clamp(1.4rem, 1.2857rem 0.3571vw, 1.8rem);
 }
 
 .tx-lm {
-  font-size: clamp(1.6rem, 1.4857rem + 0.3571vw, 2rem);
+  font-size: clamp(1.6rem, 1.4857rem 0.3571vw, 2rem);
 }
 
 .tx-sl {
-  font-size: clamp(1.8rem, 1.6857rem + 0.3571vw, 2.2rem);
+  font-size: clamp(1.8rem, 1.6857rem 0.3571vw, 2.2rem);
 }
 
 .tx-ml {
-  font-size: clamp(2rem, 1.8857rem + 0.3571vw, 2.4rem);
+  font-size: clamp(2rem, 1.8857rem 0.3571vw, 2.4rem);
 }
 
 .tx-l {
-  font-size: clamp(2.4rem, 2.2857rem + 0.3571vw, 2.8rem);
+  font-size: clamp(2.4rem, 2.2857rem 0.3571vw, 2.8rem);
 }
 
 .tx-x {
-  font-size: clamp(2.8rem, 2.6857rem + 0.3571vw, 3.2rem);
+  font-size: clamp(2.8rem, 2.6857rem 0.3571vw, 3.2rem);
 }
 
 #toggleMode_area {

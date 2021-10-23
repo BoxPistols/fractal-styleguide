@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+.head {
+  font-weight: 500;
+  line-height: 1.5;
+
+  margin-bottom: 0.5em;
+}
+.head {
+  &_1 {
+    font-size: 3.2rem;
+  }
+  &_2 {
+    font-size: 2.8rem;
+  }
+  &_3 {
+    font-size: 2.4rem;
+  }
+  &_4 {
+    font-size: 2.2rem;
+  }
+  &_5 {
+    font-size: 2rem;
+  }
+}
+
+/*  Font-Sizes * */
+
+.fz8 {
+  font-size: 0.8rem;
+}
+
+.fz12 {
+  font-size: 1.2rem;
+}
+
+.fz16 {
+  font-size: 1.6rem;
+}
+
+.fz20 {
+  font-size: 2rem;
+}
+
+.fz24 {
+  font-size: 2.4rem;
+}
+
+.fz28 {
+  font-size: 2.8rem;
+}
+
+.fz32 {
+  font-size: 3.2rem;
+}
+
+.fz36 {
+  font-size: 3.6rem;
+}
+
+.fz40 {
+  font-size: 4rem;
+}
+
+.fz44 {
+  font-size: 4.4rem;
+}
+
+.fz48 {
+  font-size: 4.8rem;
+}
+
+/*  Responsive font Size * */
+
+/*
+*  s: 12-14
+ * * sm: 14-16
+ * *  m: 14-18
+ * * lm: 16-20
+ * * sl: 18-22
+ * * ml: 20-24
+ * *    l: 22-26
+ * * l: 24-28
+ * *    xl: 26-30
+ * *    sx: 28-32
+ * *  x: 28-32
+ *
+*/
+
+/*  px is IE対応： フォールバックの設置 = 中間サイズ * */
+
+/* 12px @ 400px increasing to 14px @ 1440px */
+
+.tx-s {
+  font-size: 1.3rem;
+  font-size: clamp(1.2rem, 1.1429rem(+0.1786vw), 1.4rem);
+}
+
+.tx-sm {
+  font-size: clamp(1.4rem, 1.3429rem(+0.1786vw), 1.6rem);
+}
+
+.tx-m {
+  font-size: clamp(1.4rem, 1.2857rem(+0.3571vw), 1.8rem);
+}
+
+.tx-lm {
+  font-size: clamp(1.6rem, 1.4857rem(+0.3571vw), 2rem);
+}
+
+.tx-sl {
+  font-size: clamp(1.8rem, 1.6857rem(+0.3571vw), 2.2rem);
+}
+
+.tx-ml {
+  font-size: clamp(2rem, 1.8857rem(+0.3571vw), 2.4rem);
+}
+
+.tx-l {
+  font-size: clamp(2.4rem, 2.2857rem(+0.3571vw), 2.8rem);
+}
+
+.tx-x {
+  font-size: clamp(2.8rem, 2.6857rem(+0.3571vw), 3.2rem);
+}
