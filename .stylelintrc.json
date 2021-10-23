@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "stylelint-prettier/recommended",
+    "stylelint-config-prettier"
+  ],
+  "plugin": [
+    "stylelint-scss",
+    "stylelint-prettier"
+  ],
+  "rules": {
+    "prettier/prettier": true,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "function",
+          "if",
+          "for",
+          "each",
+          "include",
+          "mixin",
+          "content"
+        ]
+      }
+    ]
+  }
+}

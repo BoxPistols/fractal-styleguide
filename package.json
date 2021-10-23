@@ -9,21 +9,21 @@
     "start": "npm-run-all -p start:*",
     "start:fractal": "fractal start --sync",
     "react": "parcel ./jsx/index.html -p 8888 --open -d react",
+    "react-build": "npm-run-all -p build:*",
     "css": "npm-run-all -p css:*",
     "css:assets": "sass --watch assets/css/. assets/theme/.",
     "css:components": "sass --watch --no-source-map src/components/",
     "css-build": "npm-run-all -p css-build:*",
     "css-build:css-minify": "sass --watch --no-source-map --stylen compressed assets/css/. assets/theme/.",
     "build": "fractal build",
-    "react-build": "npm-run-all -p build:*",
     "build:jsx-clean": "rm -rf react/*",
     "build:react-build": "parcel build ./jsx/index.html -d react",
     "check": "npx prettier --check ./src --ignore-path .gitignore ",
+    "fix": "npx prettier --write ./assets  && prettier ./assets/**/*.css --fix  && prettier ./assets/**/*.css --fix ",
 
-    "fix": "npx prettier --write ./src  ./assets/**/*.css --fix  ./assets/**/*.css --fix ",
-
+    "eslint": "eslint ./assets",
     "prettier": "prettier ./assets && prettier ./src/components",
-    "eslint": "eslint ./assets"
+    "stylint": "stylelint  ./**/*.scss"
   },
   "dependencies": {
     "@frctl/fractal": "^1.4.0",
@@ -46,6 +46,12 @@
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.4.1",
+    "stylelint": "^14.0.0",
+    "stylelint-config": "^0.1.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended-scss": "^5.0.0",
+    "stylelint-prettier": "^1.2.0",
+    "stylelint-scss": "^4.0.0",
     "typescript": "^4.0.3"
   }
 }

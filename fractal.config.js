@@ -14,7 +14,7 @@ fractal.docs.set('path', __dirname + '/src/documents');
 
 // browsersync設定
 fractal.web.set('server.sync', true);
-fractal.web.set('server.syncOptions', { open: true });
+fractal.web.set('server.syncOptions', { open: false });
 
 // 静的ファイル読み込み
 fractal.web.set('static.path', __dirname + '/assets');
