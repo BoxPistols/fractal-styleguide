@@ -17,5 +17,12 @@
   "vue3snippets.enable-compile-vue-file-on-did-save-code": false,
   "javascript.format.enable": false,
   "editor.formatOnSave": true,
-  "babel-compile-on-save.emitTSDeclarationMap": false
+"babel-compile-on-save.emitTSDeclarationMap": false,
+"workbench.colorCustomizations": {
+    "activityBar.background": "#11350A",
+    "titleBar.activeBackground": "#184A0E",
+    "titleBar.activeForeground": "#F3FCF2"
+},
+"vue-helper.indent-size": 4,
+"prettier.tabWidth": 4
 }
