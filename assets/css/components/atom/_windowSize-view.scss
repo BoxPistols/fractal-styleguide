@@ -1,0 +1,38 @@
+#windowSizeView_area {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  opacity: 0.9;
+  z-index: 3;
+
+  #windowSizeView {
+    font-family: "Nanum Gothic Coding", monospace;
+
+    @include fx;
+    @include fx-c;
+
+    min-width: 60px;
+    padding: 0.1rem 0.8rem;
+    font-size: 1.4rem;
+    border: 1px solid $grayLight;
+    border-radius: 1.4rem;
+    background-color: rgba(pink, 0.9);
+
+    &.sm {
+      background-color: rgba(skyblue, 0.9);
+    }
+
+    &.md {
+      background-color: rgba($bgDark, 0.9);
+      color: $ghost;
+    }
+
+    &.lg {
+      background-color: rgba(lime, 0.9);
+    }
+
+    &.xl {
+      background-color: rgba(yellow, 0.9);
+    }
+  }
+}

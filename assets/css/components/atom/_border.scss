@@ -1,0 +1,12 @@
+/* -------- Borders -------- */
+
+/** mixin */
+@mixin border {
+  border: 1px solid $gray;
+}
+
+// TODO: colors /  radius
+/** include */
+.border {
+  @include border;
+}
