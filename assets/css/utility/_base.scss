@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap');
+
+/*  reset * */
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin    : 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro',
+        'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size  : 10px;
+    line-height: 1.5;
+
+    zoom: 1;
+
+    text-justify: inter-ideograph;
+
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+    -ms-text-size-adjust    : 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/*  Link * */
+
+a {
+    text-decoration: none;
+
+    color: black;
+}
+
+/*  image * */
+
+img {
+    width: 100%;
+}
+
+/*  Global Wrapping Style  * */
+
+#previewArea {
+    font-size: 1.6rem;
+
+    min-height: 100vh;
+
+    color           : white;
+    background-color: black;
+}
+
+#previewArea.onColorLight {
+    animation: fade 0.9s;
+
+    color           : black;
+    background-color: white;
+}
+
+@keyframes fade {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+.wrap {
+    font-size: 1.6rem;
+
+    padding: 3.2rem 0 1.6rem;
+}
+
+.wrap.full {
+    padding: 0;
+}
+
+.section {
+    max-width: 960px;
+    padding  : 20px 24px 0;
+}
+
+.section.full {
+    max-width: 100%;
+}
