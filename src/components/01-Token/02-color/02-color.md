@@ -1,3 +1,3 @@
 # Color
 
-- assets/css/utility/\_color.sass
+-   assets/css/utility/\_color.sass

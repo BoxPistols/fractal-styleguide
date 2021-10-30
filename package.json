@@ -1,51 +1,49 @@
 {
-  "name": "design-system-fractal",
-  "version": "1.1.1",
-  "description": "create origin theme",
-  "author": "asagiri design",
-  "license": "ISC",
-  "main": "index.js",
-  "scripts": {
-    "start": "npm-run-all -p start:*",
-    "start:fractal": "fractal start --sync",
-    "react": "parcel ./jsx/index.html -p 8888 --open -d react",
-    "css": "npm-run-all -p css:*",
-    "css:assets": "sass --watch assets/css/. assets/theme/.",
-    "css:components": "sass --watch --no-source-map src/components/",
-    "css-build": "npm-run-all -p css-build:*",
-    "css-build:css-minify": "sass --watch --no-source-map --stylen compressed assets/css/. assets/theme/.",
-    "build": "fractal build",
-    "react-build": "npm-run-all -p build:*",
-    "build:jsx-clean": "rm -rf react/*",
-    "build:react-build": "parcel build ./jsx/index.html -d react",
-    "check": "npx prettier --check ./src --ignore-path .gitignore ",
-
-    "fix": "npx prettier --write ./src  ./assets/**/*.css --fix  ./assets/**/*.css --fix ",
-
-    "prettier": "prettier ./assets && prettier ./src/components",
-    "eslint": "eslint ./assets"
-  },
-  "dependencies": {
-    "@frctl/fractal": "^1.4.0",
-    "faker": "^5.1.0",
-    "loadash": "^1.0.0",
-    "node-sass": "^4.14.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "sass": "^1.27.0"
-  },
-  "devDependencies": {
-    "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8",
-    "eslint": "^7.1.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "npm-run-all": "^4.1.5",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "^2.4.1",
-    "typescript": "^4.0.3"
-  }
+    "name": "design-system-fractal",
+    "version": "1.1.1",
+    "description": "create origin theme",
+    "author": "asagiri design",
+    "license": "ISC",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm-run-all -p start:*",
+        "start:fractal": "fractal start --sync",
+        "react": "parcel ./jsx/index.html -p 8888 --open -d react",
+        "css": "npm-run-all -p css:*",
+        "css:assets": "sass --watch assets/css/. assets/theme/.",
+        "css:components": "sass --watch --no-source-map src/components/",
+        "css-build": "npm-run-all -p css-build:*",
+        "css-build:css-minify": "sass --watch --no-source-map --stylen compressed assets/css/. assets/theme/.",
+        "build": "fractal build",
+        "react-build": "npm-run-all -p build:*",
+        "build:jsx-clean": "rm -rf react/*",
+        "build:react-build": "parcel build ./jsx/index.html -d react",
+        "check": "npx prettier --check ./src --ignore-path .gitignore ",
+        "fix": "npx prettier --write ./src  ./assets/**/*.scss --fix  ./assets/**/*.css --fix  ./assets/**/*.js --fix ",
+        "prettier": "prettier ./assets && prettier ./src/components",
+        "eslint": "eslint ./assets"
+    },
+    "dependencies": {
+        "@frctl/fractal": "^1.4.0",
+        "faker": "^5.1.0",
+        "loadash": "^1.0.0",
+        "node-sass": "^4.14.1",
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0",
+        "sass": "^1.27.0"
+    },
+    "devDependencies": {
+        "@types/react": "^16.9.53",
+        "@types/react-dom": "^16.9.8",
+        "eslint": "^7.1.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "npm-run-all": "^4.1.5",
+        "parcel-bundler": "^1.12.4",
+        "prettier": "^2.4.1",
+        "typescript": "^4.0.3"
+    }
 }
