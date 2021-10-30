@@ -21,7 +21,10 @@
         "check": "npx prettier --check ./src --ignore-path .gitignore ",
         "fix": "npx prettier --write ./src  ./assets/**/*.scss --fix  ./assets/**/*.css --fix  ./assets/**/*.js --fix ",
         "prettier": "prettier ./assets && prettier ./src/components",
-        "eslint": "eslint ./assets"
+        "eslint": "eslint ./assets",
+        "lint": "stylint ./assets --fix",
+        "stylelint": "stylint ./assets/**/*.{sass,scss} ",
+        "lt": "stylint  ./assets/**/*.{scss,sass} --fix"
     },
     "dependencies": {
         "@frctl/fractal": "^1.4.0",
@@ -44,6 +47,7 @@
         "npm-run-all": "^4.1.5",
         "parcel-bundler": "^1.12.4",
         "prettier": "^2.4.1",
+        "stylint": "^2.0.0",
         "typescript": "^4.0.3"
     }
 }

@@ -1,16 +1,16 @@
 @charset "UTF-8";
-/* * Break Point
- * *  min-width
- * *     sm: 480px
- * *     md: 768px
- * *     lg: 1024px
- * *     xl: 1440px
- * * min-width = max-width + 1px
- * */
-/** Example **/
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap');
+/* Break Point
+ *  min-width
+ *     sm: 480px
+ *     md: 768px
+ *     lg: 1024px
+ *     xl: 1440px
+ * min-width = max-width + 1px
+ */
+/** Example */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap");
 .m-auto {
   margin: auto;
 }
@@ -795,10 +795,10 @@
   padding-bottom: 48px;
 }
 
-/** include **/
+/** include */
 /* -------- Block or None -------- */
-/** mixin  **/
-/** include **/
+/** mixin  */
+/** include */
 .d-block {
   display: block;
 }
@@ -812,8 +812,8 @@
 }
 
 /* -------- flex -------- */
-/** mixin **/
-/** includes **/
+/** mixin */
+/** includes */
 .fx {
   display: flex;
 }
@@ -843,8 +843,8 @@
   align-items: flex-end;
 }
 
-/** Colors **/
-/** preview for color **/
+/** Colors */
+/** preview for color */
 .color__org {
   display: flex;
   flex-wrap: wrap;
@@ -902,8 +902,8 @@
 }
 
 /* -------- Block or None -------- */
-/** mixin  **/
-/** include **/
+/** mixin  */
+/** include */
 .d-block {
   display: block;
 }
@@ -917,8 +917,8 @@
 }
 
 /* -------- flex -------- */
-/** mixin **/
-/** includes **/
+/** mixin */
+/** includes */
 .fx {
   display: flex;
 }
@@ -948,12 +948,12 @@
   align-items: flex-end;
 }
 
-/** reset **/
+/*  reset * */
 *,
 ::after,
 ::before {
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
@@ -961,54 +961,55 @@ html {
 }
 
 body {
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 10px;
+  zoom: 1;
   line-height: 1.5;
-  font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro',
-    'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  text-justify: inter-ideograph;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  text-justify: inter-ideograph;
-  zoom: 1;
 }
 
-/** Link **/
+/*  Link * */
 a {
   text-decoration: none;
-  color: #25303b;
+  color: black;
 }
 
-/** image **/
+/*  image * */
 img {
   width: 100%;
 }
 
-/** Global Wrapping Style  **/
+/*  Global Wrapping Style  * */
 #previewArea {
-  min-height: 100vh;
   font-size: 1.6rem;
+  min-height: 100vh;
   color: white;
-  background-color: #25303b;
+  background-color: black;
 }
+
 #previewArea.onColorLight {
-  background-color: white;
-  color: #25303b;
   animation: fade 0.9s;
+  color: black;
+  background-color: white;
 }
 
 @keyframes fade {
   0% {
-    background-color: #25303b;
+    background-color: black;
   }
   100% {
     background-color: white;
   }
 }
 .wrap {
-  padding: 3.2rem 0 1.6rem;
   font-size: 1.6rem;
+  padding: 3.2rem 0 1.6rem;
 }
+
 .wrap.full {
   padding: 0;
 }
@@ -1017,6 +1018,7 @@ img {
   max-width: 960px;
   padding: 20px 24px 0;
 }
+
 .section.full {
   max-width: 100%;
 }
@@ -1029,10 +1031,10 @@ img {
   padding: 1.2rem 2.4rem;
 }
 
-/** include **/
+/** include */
 /* -------- Block or None -------- */
-/** mixin  **/
-/** include **/
+/** mixin  */
+/** include */
 .d-block {
   display: block;
 }
@@ -1046,8 +1048,8 @@ img {
 }
 
 /* -------- flex -------- */
-/** mixin **/
-/** includes **/
+/** mixin */
+/** includes */
 .fx {
   display: flex;
 }
@@ -1077,7 +1079,7 @@ img {
   align-items: flex-end;
 }
 
-/** Button default **/
+/** Button default */
 button {
   border: none;
 }
@@ -1089,14 +1091,13 @@ button.btn {
   background-color: #c6cbce;
   transition: 0.3s;
   outline: none;
-  /** Width Sizes **/
-  /** Width Sizes **/
+  /** Width Sizes */
+  /** Width Sizes */
 }
 button.btn:hover {
   opacity: 0.85;
 }
-button.btn:focus,
-button.btn:active {
+button.btn:focus, button.btn:active {
   outline: none;
   background-color: skyblue;
 }
@@ -1111,12 +1112,11 @@ button.btn a {
   color: #25303b;
   background-color: #c6cbce;
   border-radius: calc(40px / 2);
-  /** Button Sizes **/
-  /** Width Sizes **/
-  /** Colors **/
+  /** Button Sizes */
+  /** Width Sizes */
+  /** Colors */
 }
-button.btn a:focus,
-button.btn a:active {
+button.btn a:focus, button.btn a:active {
   outline: none;
   background-color: skyblue;
 }
@@ -1166,7 +1166,7 @@ button.btn.large {
 }
 button.btn.full {
   min-width: 100%;
-  /** Colors **/
+  /** Colors */
 }
 button.btn.success a {
   background-color: teal;
@@ -1321,7 +1321,7 @@ button.btn.full a {
 }
 
 #toggleMode {
-  font-family: 'Nova Mono', monospace;
+  font-family: "Nova Mono", monospace;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1354,7 +1354,7 @@ button.btn.full a {
   z-index: 3;
 }
 #windowSizeView_area #windowSizeView {
-  font-family: 'Nanum Gothic Coding', monospace;
+  font-family: "Nanum Gothic Coding", monospace;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1380,8 +1380,8 @@ button.btn.full a {
 }
 
 /* -------- Borders -------- */
-/** mixin **/
-/** include **/
+/** mixin */
+/** include */
 .border {
   border: 1px solid #6e7377;
 }

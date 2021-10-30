@@ -1,9 +1,12 @@
 module.exports = {
-  env: {
+  plugins: [
+    "stylelint-scss"
+  ],
+    env: {
     browser: true,
     es2021: true,
   },
-  extends: ['eslint:recommended', 'plugin:node/recommended'],
+  extends: ['eslint:recommended', 'plugin:node/recommended','stylelint-config-recommended-scss',],
 
   parserOptions: {
     ecmaVersion: 12,
@@ -13,5 +16,6 @@ module.exports = {
     indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single'],
+    &#8230;
   },
 }
