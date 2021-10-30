@@ -24,7 +24,7 @@
         "eslint": "eslint ./assets",
         "lint": "stylint ./assets --fix",
         "stylelint": "stylint ./assets/**/*.{sass,scss} ",
-        "lt": "stylint  ./assets/**/*.{scss,sass} --fix"
+        "stl": "stylint  assets/**/*.{scss,sass} --fix"
     },
     "dependencies": {
         "@frctl/fractal": "^1.4.0",
