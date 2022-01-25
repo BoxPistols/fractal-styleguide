@@ -20,7 +20,6 @@
     "build:react-build": "parcel build ./jsx/index.html -d react",
     "check": "npx prettier --check ./src --ignore-path .gitignore ",
     "fix": "npx prettier --write ./assets  && prettier ./assets/**/*.css --fix  && prettier ./assets/**/*.css --fix ",
-
     "eslint": "eslint ./assets",
     "prettier": "prettier ./assets && prettier ./src/components",
     "stylint": "stylelint  ./**/*.scss"
@@ -53,5 +52,8 @@
     "stylelint-prettier": "^1.2.0",
     "stylelint-scss": "^4.0.0",
     "typescript": "^4.0.3"
+  },
+  "volta": {
+    "node": "14.18.3"
   }
 }
