@@ -1085,23 +1085,6 @@ button {
 }
 
 button.btn {
-  padding: 0;
-  border-radius: calc(40px / 2);
-  color: #25303b;
-  background-color: #c6cbce;
-  transition: 0.3s;
-  outline: none;
-  /** Width Sizes */
-  /** Width Sizes */
-}
-button.btn:hover {
-  opacity: 0.85;
-}
-button.btn:focus, button.btn:active {
-  outline: none;
-  background-color: skyblue;
-}
-button.btn a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1115,40 +1098,49 @@ button.btn a {
   /** Button Sizes */
   /** Width Sizes */
   /** Colors */
+  /** Width Sizes */
+  /** Width Sizes */
 }
-button.btn a:focus, button.btn a:active {
+button.btn:hover {
+  opacity: 0.85;
+}
+button.btn:focus, button.btn:active {
   outline: none;
   background-color: skyblue;
 }
-button.btn a.btnSize-sm {
+button.btn:focus, button.btn:active {
+  outline: none;
+  background-color: skyblue;
+}
+button.btn.btnSize-sm {
   min-height: 32px;
   padding: 0.5em 1.2em;
   font-size: 1.2rem;
 }
-button.btn a.min {
+button.btn.min {
   min-width: auto;
 }
-button.btn a.normal {
+button.btn.normal {
   min-width: 120px;
 }
-button.btn a.middle {
+button.btn.middle {
   min-width: 320px;
 }
-button.btn a.large {
+button.btn.large {
   min-width: 480px;
 }
-button.btn a.full {
+button.btn.full {
   min-width: 100%;
 }
-button.btn a.success {
+button.btn.success {
   background-color: teal;
   color: white;
 }
-button.btn a.warning {
+button.btn.warning {
   background-color: orange;
   color: white;
 }
-button.btn a.danger {
+button.btn.danger {
   background-color: tomato;
   color: white;
 }
@@ -1168,31 +1160,31 @@ button.btn.full {
   min-width: 100%;
   /** Colors */
 }
-button.btn.success a {
+button.btn.success {
   background-color: teal;
   color: white;
 }
-button.btn.warning a {
+button.btn.warning {
   background-color: orange;
   color: white;
 }
-button.btn.danger a {
+button.btn.danger {
   background-color: tomato;
   color: white;
 }
-button.btn.min a {
+button.btn.min {
   min-width: auto;
 }
-button.btn.normal a {
+button.btn.normal {
   min-width: 120px;
 }
-button.btn.middle a {
+button.btn.middle {
   min-width: 320px;
 }
-button.btn.large a {
+button.btn.large {
   min-width: 480px;
 }
-button.btn.full a {
+button.btn.full {
   min-width: 100%;
 }
 

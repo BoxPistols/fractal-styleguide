@@ -24,5 +24,7 @@
     "titleBar.activeForeground": "#F3FCF2"
 },
 "vue-helper.indent-size": 4,
-"prettier.tabWidth": 4
+"prettier.tabWidth": 4,
+"standard.autoFixOnSave": true,
+"csscomb.formatOnSave": true
 }

@@ -1,10 +1,9 @@
-import React from 'react'
-// import PropTypes from 'prop-types'
+import React from 'react';
 
-function Button2(props) {
-  return <div>AAA</div>
+export const Button = () => {
+  return (
+    <div>
+      <button className="btn success">Button!</button>
+    </div>
+  );
 }
-
-// Button2.propTypes = {}
-
-export default Button2
